@@ -3,8 +3,8 @@
 
 UseCase navn | UC-01 LavTilbud | 
 -------------| -------------------------------| 
-Scope        | HOEKCEL
-Primary Actor| HOEK-studerende
+Scope        | New Yorker
+Primary Actor| Tømrer
 Level        | User-goal
 Description  | Systemet skal kunne præsentere et UI, hvor så brugeren kan indtaste både højde og bredde på New York vægge. Systemet viser en liste over mulige typer af glas, hvor så brugeren skal vælge en type. Systemet viser en liste over mulige typer af døre, og brugeren skal vælge om de vil have en dør, og derefter hvad for en type dør.
 Stakeholders and Interests  | Byens Vinduer/New-Yorker.dk
