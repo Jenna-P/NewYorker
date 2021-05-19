@@ -6,7 +6,7 @@
 
 ***Cross-reference:***
 
--OC02_UdfyldVægStørrelse
+-UC02_Bergen antal ruder og fag
 
 ***Pre-conditions:***
 
@@ -14,5 +14,5 @@
 
 ***Post-conditions:***
 
--Al input skal være beregnet.
+-Al input skal være beregnet.<br>
 -Systemet skal være klar med udregner, om hvor mange ruder og fag, der skal være i Newyorker Væggen.
