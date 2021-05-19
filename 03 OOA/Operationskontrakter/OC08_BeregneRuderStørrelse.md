@@ -6,7 +6,7 @@
 
 ***Cross-reference:***
 
--UC07_beregnAntalRuderOgFag
+-UC-02 Beregn antal ruder og fag
 
 ***Pre-conditions:***
 
