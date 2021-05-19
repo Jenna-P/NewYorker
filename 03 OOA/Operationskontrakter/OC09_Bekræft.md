@@ -6,9 +6,7 @@
 
 ***Cross-reference:***
 
--UC07_beregnAntalRuderOgFag
-
--UC08_neregnRudeStørrelse
+UC-04_VisTegning
 
 ***Pre-conditions:***
 
