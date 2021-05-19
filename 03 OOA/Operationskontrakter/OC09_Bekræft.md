@@ -6,7 +6,7 @@
 
 ***Cross-reference:***
 
-UC-04_VisTegning
+-UC-02_BeregnAntalRuderOgFag.md
 
 ***Pre-conditions:***
 
