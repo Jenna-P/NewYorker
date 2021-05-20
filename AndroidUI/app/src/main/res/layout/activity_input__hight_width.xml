@@ -4,5 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/Welcome"
-    tools:context=".MainActivity"/>
+    android:background="@drawable/Vindue"
+    tools:context=".Input_Hight_width">
+
+</androidx.constraintlayout.widget.ConstraintLayout>
