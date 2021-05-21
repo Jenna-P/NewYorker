@@ -1,18 +1,18 @@
 
 # UC_Lav nyt tilbud (Iteration 1)
 
-UseCase navn | UC-01 LavTilbud | 
+UseCase navn | UC Lav nyt tilbud | 
 -------------| -------------------------------| 
 Scope        | New Yorker
 Primary Actor| Tømrer/Kunder
 Level        | User-goal
-Description  | Systemet skal kunne præsentere et UI, hvor så brugeren kan indtaste både højde og bredde på New York vægge. Systemet viser en liste over mulige typer af glas, hvor så brugeren skal vælge en type. Systemet viser en liste over mulige typer af døre, og brugeren skal vælge om de vil have en dør, og derefter hvad for en type dør.
+Description  | Systemet skal kunne modtage angivelse af størrelse på den ønskede væg, udregne og præsentere en skitse, beregne et færdigt tilbud på væggen samt sende disse til kunden og producenten på email. 
 Stakeholders and Interests  | Byens Vinduer/New-Yorker.dk
-Preconditions  |  Der er ingen preconditions.
-Succes Guarantee  |  Brugeren har indtastet højde og bredde på vægge, valgt type af glas, valgt om der skal være dør og hvis ja hvilke type af dør, og dette præsenteres. 
-Main Succes Scenario  | 1. Bruger indtaster højde på væg <br> 2. Bruger indtaster bredde på væg. <br> 3. Bruger vælger type af glas. <br> 4. Bruger vælger om der skal være dør <br> 5. Hvis ja til 4., bruger vælger hvilken type af dør.
-Extensions  | 1. Systemet oplyser at højde skal angives med tal. <br> 1a Bruger angiver højde i tal. <br> <br> 2. Systemet oplyser at bredde skal angives med tal. <br> 2a Bruger angiver bredde i tal. <br> <br> 3. Systemet oplyser bruger om at vælge en type af glas. <br> <br> 4. Systemet oplyser bruger om at de skal vælge om der skal være en dør. <br><br> 5. Systemet oplyser bruger om at de skal vælge en type af dør, hvis de har valgt der skal være en dør i punkt 4. 
+Preconditions  | Den android enhed er tændt.<br> Applikationen er installeret og klar til at bruge.
+Succes Guarantee  |  Der er oprettet et gyldigt tilbud og det er sendt til kunden og producenten 
+Main Succes Scenario  | 1. Brugeren starter oprettelse af nyt tilbud. <br> 2. Systemet viser indtastnings mulighederne for en ny væg. <br> 3. Brugeren indtaster væggens højde og bredde. <br> 4. Systemet beregner antallet af lodrette ruder ud fra at højde skal ligge så tæt på 60 cm som muligt.<br> 5. Systemet beregner antallet af fag, ud fra at bredden på ruderne skal ligge så tæt på 45 cm som muligt.<br> 6. Systemet genererer skitsen med det beregnede antal ruder og fag.<br> 7. Systemet viser skitsen. <br> 8. Systemet opdaterer prisen ud fra den indtastede højde/bredde og de beregnede antal ruder og fag.<br> 9. Systemet viser tilbudsprisen.<br> 10. Brugeren bekræfter den viste skitse og tilbudsprisen.<br> 11. Systemet viser kontaktformularen til indtastning af kundeinformation.<br> 12. Brugeren angiver navn, email og telefonnummer.<br> 13. Systemet laver e mail og sender med vedhæftede tilbud samt skitse.
+Extensions  | 3a. Mangler at udfylde information om højde.<br> 1. System oplyser om fejl og afventer brugerinput. Processen fortsætter ved punkt 3.<br> <br> 3b.  Hvis brugeren angiver negativ tal om højde.<br> 1. System oplyser om fejl og afventer brugerinput. Processen fortsætter ved punkt 3.<br> <br> 3c. Hvis brugeren angiver højden mere end 250 cm.<br> 1. Systemet oplyser at max højde er 250 cm og afventer brugerinput. Processen fortsætter ved punkt 3.<br> <br> 5a. Mangler at udfylde information om bredde.<br> 1. System oplyser om fejl og afventer brugerinput. Processen fortsætter ved punkt 5.<br> <br> 5b. Hvis brugeren angiver negativ tal om bredde.<br> 1. System oplyser om fejl og afventer brugerinput. Processen fortsætter ved punkt 5.<br><br> 5c. Hvis brugeren angiver bredden mere end 150 cm.<br> 1. Systemet oplyser at væggen vil blive sammensat af flere elementer. Processen fortsætter ved punkt 5.
 Special Requirements  | --
 Technology and Data Variations List  | --
-Frequency of Occurrence  | --
+Frequency of Occurrence  | Use casen forekommer ved oprettelse af en designe væg
 Miscellaneous  | --
