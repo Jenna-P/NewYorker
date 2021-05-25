@@ -1,4 +1,4 @@
-# OC01_opretNytTilbud :
+# OC01_opretNytTilbud 
 
 ### Operation:
 Åbner interface, så et tilbud kan registreres.
