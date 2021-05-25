@@ -1,13 +1,13 @@
 # OC06_bekræftAntalFagRuder 
 
-### Operation
+### Operation:
 Brugeren bekræfter det beregnede antal fag og ruder
 
-### Cross-reference
+### Cross-reference:
 UC_Lav nyt tilbud(Iteration1)
 
-### Pre-conditions
+### Pre-conditions:
 - Systemet har beregnet antallet af fag og ruder og ud fra de indtastede oplysninger
 
-### Post-conditions
+### Post-conditions:
 - Systemet er klar til at generere en skitse
