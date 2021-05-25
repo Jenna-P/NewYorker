@@ -1,4 +1,4 @@
-# OC04_beregneAntalRuder :
+# OC04_beregneAntalRuder 
 
 ### Operation:
 Systemet beregner antal ruder ud fra den angivne højde
