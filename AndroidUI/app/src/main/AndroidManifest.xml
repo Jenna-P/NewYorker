@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewYorkerUI">
-        <activity android:name=".Input_Hight_width"></activity>
+        <activity android:name=".recept"></activity>
+        <activity android:name=".userdatainput" />
+        <activity android:name=".showmeasurements" />
+        <activity android:name=".showdoor" />
+        <activity android:name=".Input_Hight_width" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
