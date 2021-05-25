@@ -66,11 +66,11 @@
         app:srcCompat="@android:drawable/editbox_dropdown_dark_frame" />
 
     <Button
-        android:id="@+id/TibudsKnap"
+        android:id="@+id/nextActivityButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
-        android:text="@string/opret_tilbud"
+        android:text="@string/opret_et_tilbud"
         app:backgroundTint="#BF8E55"
         app:iconPadding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"

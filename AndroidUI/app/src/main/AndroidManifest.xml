@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewYorkerUI">
-        <activity android:name=".loading"></activity>
-        <activity android:name=".recept" />
-        <activity android:name=".userdatainput" />
-        <activity android:name=".showmeasurements" />
-        <activity android:name=".showdoor" />
-        <activity android:name=".Input_Hight_width" />
+        <activity android:name=".Loadingscreen"></activity>
+        <activity android:name=".ShowAccept" />
+        <activity android:name=".UserContact" />
+        <activity android:name=".ShowMeasurements" />
+        <activity android:name=".ShowWall" />
+        <activity android:name=".UserMeasurements" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

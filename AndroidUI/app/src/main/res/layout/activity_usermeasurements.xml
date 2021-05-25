@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".Input_Hight_width">
+    tools:context=".UserMeasurements">
 
     <ImageView
         android:id="@+id/imageView13"
@@ -19,11 +19,11 @@
         app:srcCompat="@drawable/baggrundprogram" />
 
     <Button
-        android:id="@+id/tibudsKnap"
+        android:id="@+id/makeoffer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
-        android:text="@string/opret_tilbud"
+        android:text="@string/vis_design"
         app:backgroundTint="#BF8E55"
         app:iconPadding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,7 +54,7 @@
         android:ems="10"
         android:hint="@string/m_l_angives_i_centimeter"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/tibudsKnap"
+        app:layout_constraintBottom_toTopOf="@+id/makeoffer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"

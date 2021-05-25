@@ -22,5 +22,7 @@
     <string name="har_du_en_s_rlig_besked">har du en særlig besked ?</string>
     <string name="beregner_dine_valg_vent_venligst">Beregner dine valg, vent venligst.</string>
     <string name="loading">loading</string>
+    <string name="vis_design">Vis design</string>
+    <string name="opret_et_tilbud">opret et tilbud</string>
 
 </resources>

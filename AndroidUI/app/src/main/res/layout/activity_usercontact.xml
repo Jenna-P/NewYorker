@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".userdatainput">
+    tools:context=".UserContact">
 
     <ImageView
         android:id="@+id/imageView7"
@@ -97,7 +97,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/tibudsKnap3"
+        android:id="@+id/sendorder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
@@ -166,7 +166,7 @@
         android:ems="10"
         android:hint="@string/har_du_en_s_rlig_besked"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/tibudsKnap3"
+        app:layout_constraintBottom_toTopOf="@+id/sendorder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

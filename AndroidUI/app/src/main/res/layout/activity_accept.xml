@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".recept">
+    tools:context=".ShowAccept">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/baggrundprogram" />
 
     <Button
-        android:id="@+id/tibudsKnap2"
+        android:id="@+id/closeapp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
@@ -41,7 +41,7 @@
         android:layout_height="416dp"
         android:layout_marginTop="20dp"
         android:contentDescription="@string/app_name"
-        app:layout_constraintBottom_toTopOf="@+id/tibudsKnap2"
+        app:layout_constraintBottom_toTopOf="@+id/closeapp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
@@ -57,7 +57,7 @@
         android:textAllCaps="true"
         android:textColor="@color/black"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tibudsKnap2"
+        app:layout_constraintBottom_toTopOf="@+id/closeapp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
