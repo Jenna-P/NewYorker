@@ -1,4 +1,4 @@
-# OC03_angivBredden :
+# OC03_angivBredden 
 
 ### Operation:
 Brugeren angiver  bredden af væggen og systemet validerer at informationen er indsat korrekt.
