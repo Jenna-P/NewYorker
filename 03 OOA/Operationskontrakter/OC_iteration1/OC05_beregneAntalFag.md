@@ -1,4 +1,4 @@
-# OC05_beregneAntalFag :
+# OC05_beregneAntalFag 
 
 ### Operation:
 Systemet beregner antal fag ud fra den angivne bredde
