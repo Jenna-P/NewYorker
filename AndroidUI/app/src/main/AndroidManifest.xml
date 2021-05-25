@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewYorkerUI">
-        <activity android:name=".recept"></activity>
+        <activity android:name=".loading"></activity>
+        <activity android:name=".recept" />
         <activity android:name=".userdatainput" />
         <activity android:name=".showmeasurements" />
         <activity android:name=".showdoor" />

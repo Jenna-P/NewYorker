@@ -5,8 +5,22 @@
     <string name="new_yorker_v_gge">NEW YORKER VÆGGE</string>
     <string name="opret_tilbud">Opret Tilbud</string>
     <string name="m_l_angives_i_centimeter">Mål angives i centimeter</string>
-    <string name="m_l_angives_i_centimeter">Mål angives i centimeter</string>
     <string name="indtast_bredten_p_v_ggen">Indtast bredten på væggen</string>
     <string name="indtast_h_jden_p_v_ggen">Indtast højden på væggen</string>
+    <string name="afslut">AFSLUT</string>
+    <string name="tak_for_bestillingen">Tak for bestillingen</string>
+    <string name="godkend_design">Godkend design</string>
+    <string name="godkend_m_l">Godkend mål</string>
+    <string name="send_bestilling">Send bestilling</string>
+    <string name="navn">Navn</string>
+    <string name="e_mail">E-mail</string>
+    <string name="telefonnummer">Telefonnummer</string>
+    <string name="kommentare_til_orderen">Kommentare til orderen</string>
+    <string name="dit_telefonnummer">Dit telefonnummer</string>
+    <string name="dit_navn">Dit navn</string>
+    <string name="din_email_adresse">Din Email adresse</string>
+    <string name="har_du_en_s_rlig_besked">har du en særlig besked ?</string>
+    <string name="beregner_dine_valg_vent_venligst">Beregner dine valg, vent venligst.</string>
+    <string name="loading">loading</string>
 
 </resources>
