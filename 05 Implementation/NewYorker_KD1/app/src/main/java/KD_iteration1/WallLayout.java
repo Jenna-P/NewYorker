@@ -10,14 +10,15 @@ import java.util.Scanner;
         public int totalPane = 0;
         public int totalFrame = 0;
 
+        Scanner sc1= new Scanner(System.in);
+        public double height = sc1.nextDouble();
+
 
         public void createNewOffer() {
             //TODO vaildarer brugerinput
         }
 
         public  int calculatePane() {
-            Scanner sc1= new Scanner(System.in);
-            double height = sc1.nextDouble();
 
             for (int i = 1; i <= 100; i++) {
                 if (height / i <= 60) {
@@ -27,11 +28,16 @@ import java.util.Scanner;
                 }
             }
 
-            double size = height / totalPane;
-            System.out.println("size : " + size);
-
             return totalPane;
 
+        }
+
+
+        public double calPaneSize() {
+           // totalPane = calculatePane();
+            double size = height / totalPane;
+            System.out.println("size : " + size);
+            return size;
         }
 
         public int calculateFrame() {
@@ -50,7 +56,10 @@ import java.util.Scanner;
             return totalFrame;
         }
 
+        public static void main(String[] args) {
+            new WallLayout().calculatePane();
 
+        }
 
     }
 
