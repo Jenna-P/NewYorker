@@ -12,10 +12,11 @@ public class calculateOffer {
 
 
     public double calculatePrice(){
-        totalPane = wall.calculatePane();
-        totalFrame = wall.calculateFrame();
+        totalPane = wall.calculatePane(200);
+        totalFrame = wall.calculateFrame(120);
 
         price = totalPane * totalFrame * glassPanelPrice * VAT;
+        System.out.println("pris : " + price + "kr.");
 
         return price;
     }
@@ -25,5 +26,5 @@ public class calculateOffer {
         return offerRejected;
     }
 
-    
+
 }

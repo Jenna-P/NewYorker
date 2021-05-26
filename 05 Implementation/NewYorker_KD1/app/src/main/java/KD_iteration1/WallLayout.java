@@ -9,21 +9,30 @@ import java.util.Scanner;
 
         public int totalPane = 0;
         public int totalFrame = 0;
+        public double height;
+        public double width;
 
-        Scanner sc1= new Scanner(System.in);
-        public double height = sc1.nextDouble();
 
-
-        public void createNewOffer() {
+        public void createNewOffer(int height, int width) {
             //TODO vaildarer brugerinput
+            if (height > 250) {
+                System.out.println("Max højden er 250cm, indtast venligst højden igen");
+            } else if (height < 0) {
+                System.out.println("Højden er mindre end 0");
+            } else if (width > 150) {
+                System.out.println("Bredden er mere end 150cm, væggen opbygges af flere elementer");
+            } else if(width < 0) {
+                System.out.println("Bredden er mindre end 0");
+            }
+
         }
 
-        public  int calculatePane() {
-
+        public int calculatePane(int h) {
+            this.height = h;
             for (int i = 1; i <= 100; i++) {
-                if (height / i <= 60) {
+                if (h / i <= 60) {
                     totalPane = i;
-                    System.out.println("antal ruder : " + totalPane);
+
                     break;
                 }
             }
@@ -33,33 +42,40 @@ import java.util.Scanner;
         }
 
 
-        public double calPaneSize() {
-           // totalPane = calculatePane();
+        public double calPaneSize(int h) {
+            totalPane = calculatePane(200); //i parametre skal det være hent(set) user input
+            this.height = h;
             double size = height / totalPane;
+            System.out.println("antal ruder : " + totalPane);
             System.out.println("size : " + size);
             return size;
         }
 
-        public int calculateFrame() {
-            Scanner sc2= new Scanner(System.in);
-            double width = sc2.nextDouble();
-            for (int i = 0; i < 100; i++) {
+
+        public int calculateFrame(int width) {
+            for (int i = 1; i < 100; i++) {
                 if (width / i <= 45) {
                     totalFrame = i;
-                    System.out.println("antal fag : " + totalFrame);
+
                     break;
                 }
             }
-            double size = width / totalFrame;
-            System.out.println("size : " + size);
+
 
             return totalFrame;
         }
 
-        public static void main(String[] args) {
-            new WallLayout().calculatePane();
-
+        public double calFrameSize(int w) {
+            totalFrame = calculateFrame(120);
+            this.width = w;
+            double size = width / totalFrame;
+            System.out.println("antal fag : " + totalFrame);
+            System.out.println("size : " + size);
+            return size;
         }
+
+
+
 
     }
 
