@@ -25,5 +25,7 @@
     <string name="vis_design">Vis design</string>
     <string name="opret_et_tilbud">opret et tilbud</string>
     <string name="forhandler">Forhandler</string>
+    <string name="pris">Pris</string>
+    <string name="_47_dkr">47 DKR</string>
 
 </resources>
