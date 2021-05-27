@@ -1,10 +1,10 @@
-# OC01_opretNytTilbud :
+# OC01_opretNytTilbud 
 
 ### Operation:
 Åbner interface, så et tilbud kan registreres.
 
 ### Cross-reference:
-UC_Lav nyt tilbud
+UC_Lav nyt tilbud(Iteration1)
 
 ### Pre-conditions:
 - Android telefonen er tændt.
