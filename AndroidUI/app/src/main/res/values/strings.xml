@@ -24,5 +24,6 @@
     <string name="loading">loading</string>
     <string name="vis_design">Vis design</string>
     <string name="opret_et_tilbud">opret et tilbud</string>
+    <string name="forhandler">Forhandler</string>
 
 </resources>
