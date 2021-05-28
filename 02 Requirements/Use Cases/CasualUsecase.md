@@ -1,6 +1,6 @@
 # Casual Usecase
 
-### Ny UC1: Lav et tilbud (iteration 1)
+### UC1: Lav et tilbud (iteration 1)
 
 - Brugeren starter oprettelse af nyt tilbud
 - Systemet viser indtastnings mulighederne for en ny væg
