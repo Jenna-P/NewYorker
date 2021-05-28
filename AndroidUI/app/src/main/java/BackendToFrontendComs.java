@@ -4,8 +4,12 @@ import com.example.newyorkerui.UserMeasurements;
 import KD_iteration1.CalculateOffer;
 import KD_iteration1.PersonData;
 import KD_iteration1.WallLayout;
+//Denne klasse fungere som et led, mellem Frontend, og Backend.
+//På denne måde, kan vi overholde "clean architecture", der UI ikke er i direktig forbindelse med systemet.
+//alt hvad denne klasse gør, er at tage info fra den ene, og gør det klar til den anden.
 
 public class BackendToFrontendComs {
+
     //wrappers
     WallLayout wallLayout = new WallLayout();
     PersonData personData = new PersonData();
@@ -20,19 +24,15 @@ public class BackendToFrontendComs {
     public UserMeasurements getUserMeasurements() {
         return userMeasurements;
     }
-
     public UserContact getUserContact() {
         return userContact;
     }
-
     public PersonData getPersonData() {
         return personData;
     }
-
     public WallLayout getWallLayout() {
         return wallLayout;
     }
-
     public CalculateOffer getCalculateOffer() {
         return calculateOffer;
     }

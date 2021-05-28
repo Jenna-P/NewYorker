@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class ShowAccept extends AppCompatActivity {
@@ -15,7 +16,10 @@ public class ShowAccept extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accept);
 
-        switchButton = (Button) findViewById(R.id.closeapp);;
+        View wallPicture = findViewById(R.id.wallpicture);
+
+        switchButton = (Button) findViewById(R.id.makeoffer);
+
         switchButton.setOnClickListener(view -> launchActivity());
     }
 
