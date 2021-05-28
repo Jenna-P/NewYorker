@@ -6,24 +6,23 @@ import KD_iteration1.PersonData;
 import KD_iteration1.WallLayout;
 
 public class BackendToFrontendComs {
-
-    //Data fra systemet
+    //wrappers
     WallLayout wallLayout = new WallLayout();
     PersonData personData = new PersonData();
     CalculateOffer calculateOffer = new CalculateOffer();
-
-    //Data til systemet
     UserMeasurements userMeasurements = new UserMeasurements();
     UserContact userContact = new UserContact();
 
 
-    //Krydsfælt med Data
+    //Krydsfælt med Data---------------
+
+    //get data--
     public UserMeasurements getUserMeasurements() {
         return userMeasurements;
     }
 
-    public void setUserContact(UserContact userContact) {
-        this.userContact = userContact;
+    public UserContact getUserContact() {
+        return userContact;
     }
 
     public PersonData getPersonData() {
@@ -34,7 +33,16 @@ public class BackendToFrontendComs {
         return wallLayout;
     }
 
-    public void setCalculateOffer(CalculateOffer calculateOffer) {
-        this.calculateOffer = calculateOffer;
+    public CalculateOffer getCalculateOffer() {
+        return calculateOffer;
+    }
+
+    //set data--
+    public void setUserContact(UserContact userContact) {
+        this.userContact = userContact;
+    }
+
+    public void setUserMeasurements(UserMeasurements userMeasurements) {
+        this.userMeasurements = userMeasurements;
     }
 }
