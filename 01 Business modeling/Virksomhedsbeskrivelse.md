@@ -57,8 +57,16 @@ Hvordan har vi tænkt os at tjene penge på produktet.
 Vi tænker på sigt at udvikle et standardprodukt, som kan tilpasses til de enkelte producenter af New Yorker vægge. Det kan vi sælge både som et enkelt produkt, hvor kunden efterfølgende overtager ansvaret for drift og opdatering, eller med en licensering hvor vi kan bistå med holde løsningen kørende.
 
 ***Finansiering***<br>
- hvilke kilder til finansiering vil I vælge, og hvorfor (vedlæg gerne et investeringsbudget)?<br>
-//TODO
+ Vi har vedlagt et investeringsbudget , hvor dykker nærmere ned i nogle forventede men ellers er den overordnede tankegang som følger:
+
+
+- Indtægter: Vi forestiller os at kunne lave et generisk stykke software som kan tilpasses de enkelte New Yorker væg producenter der findes på markedet. Der har vi sat en fast pris på 50.000 kr. for køb af licens og tilpasning til den enkelte kunde. 
+Derudover sælger vi vedligehold (support, opdatering af priser og lignende) for en fast månedlig pris på 50 kr. pr. bruger hvor vi har sat det forventede antal brugere til 30 pr kunde, som dækker interne brugere samt eventuelle sælgere. Vi forventer at sælge én licens i det første halvår og herefter et langsomt stigende antal over tid. 
+- Udgifter: Da vi fortsat er studerende og virksomheden derfor vil være et projekt ved siden af studiet, kan vi holde vores indledende omkostninger lave. Vi har ikke nogen udgifter til husleje eller løn under studiet og derfor er vores andre administrative omkostninger også lave. Til gengæld vælger vi at sætte penge til side til investeringer, som kan føres tilbage i virksomheden når der er behov. Vi forventer at starte med en forholdsvis lav løn, hvor vi har tilsidesat 40.000 pr. ansat, som også skal dække sociale omkostninger såsom pension, feriepenge og lignende.
+- Opstartslån: Vi forventer at kunne starte med en mindre kassekredit, da vi allerede har materiale i form af laptops og lignende rent privat, som vi kan starte med. Vi har derfor ikke behov for de store omkostninger i forbindelse med opstarten af virksomheden.
+
+Alle er de angivne tal er naturligvis overslag og der må forventes at være afvigelser i forhold til det realiserede. Men vi føler ikke at det er urealistisk prissat, når man ser på den tid der indledningsvis skal lægges i udviklingen af app’en.
+
 
 ### Strategi for implementering og skalering af forretningen til andre kundesegmenter
 
