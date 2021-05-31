@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints=""
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/phone"
         android:layout_width="210dp"
         android:layout_height="43dp"
         android:layout_marginTop="8dp"
@@ -60,8 +60,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/name"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -78,8 +78,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/phone"
+        app:layout_constraintTop_toBottomOf="@+id/email"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -98,8 +98,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/note_text"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintStart_toStartOf="@+id/comments"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -116,7 +116,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/dropdownlist"
-        app:layout_constraintTop_toBottomOf="@+id/note_text" />
+        app:layout_constraintTop_toBottomOf="@+id/comments" />
 
     <Spinner
         android:id="@+id/dropdownlist"
@@ -145,13 +145,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/name"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.062" />
 
 
     <EditText
-        android:id="@+id/note_text"
+        android:id="@+id/comments"
         android:layout_width="215dp"
         android:layout_height="53dp"
         android:layout_marginTop="8dp"
@@ -165,7 +165,7 @@
         android:autofillHints="" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
