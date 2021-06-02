@@ -1,4 +1,4 @@
-# OC03_VælgGlasType :
+# OC18_VælgGlasType :
 
 ### Operation:
 Systemet viser listen over mulige glastyper og brugeren vælger en af dem.
