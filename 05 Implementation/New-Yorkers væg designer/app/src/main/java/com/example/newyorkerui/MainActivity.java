@@ -10,7 +10,6 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button switchButton;
-    Button catalougeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
         switchButton = (Button) findViewById(R.id.nextActivityButton);;
         switchButton.setOnClickListener(view -> launchActivity());
-
-        catalougeButton = (Button) findViewById(R.id.nextActivityButton);;
-        catalougeButton.setOnClickListener(view -> showcatalouge());
-    }
-
-    private void showcatalouge() {
-        Intent intent = new Intent(this, Catalogue.class);
-        startActivity(intent);
     }
 
     private void launchActivity() {

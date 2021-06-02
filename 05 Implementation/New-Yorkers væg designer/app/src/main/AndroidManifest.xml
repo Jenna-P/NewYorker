@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewYorkerUI">
-        <activity android:name=".Catalogue"></activity>
-        <activity android:name=".Loadingscreen" />
+        <activity android:name=".Loadingscreen"></activity>
         <activity android:name=".ShowAccept" />
         <activity android:name=".UserContact" />
         <activity android:name=".ShowMeasurements" />
