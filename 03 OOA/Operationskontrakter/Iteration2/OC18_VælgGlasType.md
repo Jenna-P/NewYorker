@@ -4,7 +4,7 @@
 Systemet viser listen over mulige glastyper og brugeren vælger en af dem.
 
 ### Cross-reference:
-UC01 Lav et nyt tilbud
+UC_LavNytTilbud_Iteration 2
 
 ### Pre-conditions:
 - Al information (vægstørrelse) er indtastet og valideret
