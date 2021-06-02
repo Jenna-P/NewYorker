@@ -4,7 +4,7 @@
 Hvis brugeren vil have dørgreb til døren, viser systemet listen over mulige dørgreb typer og brugeren vælger en af dem.
 
 ### Cross-reference:
-UC01 Lav et nyt tilbud
+UC_LavNytTilbud_Iteration 2
 
 ### Pre-conditions:
 - Brugeren har valgt dørtype som de vil have
