@@ -1,10 +1,10 @@
-# OC04_vælgDørType :
+# OC19_vælgDørType :
 
 ### Operation:
 Hvis brugeren vil have dør til væggen, viser systemet listen over mulige dørtyper og brugeren vælger en af dem.
 
 ### Cross-reference:
-UC01 Lav et nyt tilbud
+UC_Lav et nyt tilbud_iteration2
 
 ### Pre-conditions:
 - Brugeren har valgt den glastype de ønsker
