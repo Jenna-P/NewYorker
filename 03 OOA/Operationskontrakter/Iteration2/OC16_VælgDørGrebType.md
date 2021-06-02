@@ -1,4 +1,4 @@
-# OC05_vælgDørgrebType :
+# OC16_vælgDørgrebType :
 
 ### Operation:
 Hvis brugeren vil have dørgreb til døren, viser systemet listen over mulige dørgreb typer og brugeren vælger en af dem.
