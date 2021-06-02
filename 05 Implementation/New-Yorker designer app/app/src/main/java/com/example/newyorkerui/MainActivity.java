@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showCatalog() {
-        Intent intent = new Intent(this, Catalogue.class);
-        startActivity(intent);
+        Intent intente = new Intent(this, Catalogue.class);
+        startActivity(intente);
     }
 
     private void launchActivity() {
