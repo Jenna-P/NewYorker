@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".Catalogue">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="400dp"
+        android:layout_height="733dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -75,5 +76,6 @@
                 android:contentDescription="@string/_47_dkr"
                 app:srcCompat="@drawable/catalougeimage" />
         </LinearLayout>
-    </ScrollView>
+    </androidx.recyclerview.widget.RecyclerView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
