@@ -1,0 +1,36 @@
+com/example/newyorkerui/Glasstype.java
+ com.example.newyorkerui.Glasstype
+com/example/newyorkerui/Loadingscreen.java
+ com.example.newyorkerui.Loadingscreen
+KD_iteration1/PersonData.java
+ KD_iteration1.PersonData
+com/example/newyorkerui/UserMeasurements.java
+ com.example.newyorkerui.UserMeasurements
+KD_iteration1/ConnectToDB.java
+ KD_iteration1.ConnectToDB
+BackendToFrontendComs.java
+ BackendToFrontendComs
+com/example/newyorkerui/UserContact.java
+ com.example.newyorkerui.UserContact
+com/example/newyorkerui/ShowWall.java
+ com.example.newyorkerui.ShowWall
+com/example/newyorkerui/BuildConfig.java
+ com.example.newyorkerui.BuildConfig
+com/example/newyorkerui/Doorhandletype.java
+ com.example.newyorkerui.Doorhandletype
+com/example/newyorkerui/ShowAccept.java
+ com.example.newyorkerui.ShowAccept
+NewYorkerApp/CalculateOffer.java
+ NewYorkerApp.CalculateOffer
+KD_iteration1/WallLayout.java
+ KD_iteration1.WallLayout
+com/example/newyorkerui/Catalogue.java
+ com.example.newyorkerui.Catalogue
+com/example/newyorkerui/ShowMeasurements.java
+ com.example.newyorkerui.ShowMeasurements
+KD_iteration1/CalculateOffer.java
+ KD_iteration1.CalculateOffer
+com/example/newyorkerui/Doortype.java
+ com.example.newyorkerui.Doortype
+com/example/newyorkerui/MainActivity.java
+ com.example.newyorkerui.MainActivity
