@@ -1,4 +1,4 @@
-package KD_iteration1;
+package NewYorkerApp;
 
 import java.util.Scanner;
 

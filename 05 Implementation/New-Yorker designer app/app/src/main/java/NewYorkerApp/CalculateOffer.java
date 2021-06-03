@@ -1,7 +1,5 @@
 package NewYorkerApp;
 
-import KD_iteration1.WallLayout;
-
 public class CalculateOffer {
 
     int totalFrame ;

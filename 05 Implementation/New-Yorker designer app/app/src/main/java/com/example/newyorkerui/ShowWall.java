@@ -8,18 +8,19 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import KD_iteration1.WallLayout;
+import NewYorkerApp.WallLayout;
 import NewYorkerApp.CalculateOffer;
 
 public class ShowWall extends AppCompatActivity {
 
-    Button switchButton;
+    Button switchButton, tilpasDesign;
     TextView frameInput;
     TextView glasInput;
     TextView priceInput;
     ImageView wallDesign;
     WallLayout wall = new WallLayout();
     CalculateOffer cal = new CalculateOffer();
+
 
 
 
@@ -33,16 +34,28 @@ public class ShowWall extends AppCompatActivity {
         setDesignAndPrice();
 
 
-        switchButton = (Button) findViewById(R.id.acceptwall);;
+        switchButton = (Button) findViewById(R.id.acceptwall);
         switchButton.setOnClickListener(view -> launchActivity());
+
+        tilpasDesign = (Button) findViewById(R.id.tilpasDesign);
+        tilpasDesign.setOnClickListener(view -> adjustDesign());
+
     }
 
     private void launchActivity() {
 
-        Intent intent = new Intent(this, ShowMeasurements.class);
+        Intent intent = new Intent(this, UserContact.class);
 
         startActivity(intent);
     }
+
+    private  void adjustDesign(){
+        Intent intent = new Intent(this, Glasstype.class);
+
+        startActivity(intent);
+
+    }
+
 
     public void setDesignAndPrice() {
         frameInput = (TextView) findViewById(R.id.fagInput);

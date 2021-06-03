@@ -15,7 +15,7 @@ public class Doorhandletype extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doorhandletype);
 
-        switchButton = (Button) findViewById(R.id.handletype);
+        switchButton = (Button) findViewById(R.id.chooseDoorHandleType);
         switchButton.setOnClickListener(view -> launchActivity());
     }
 

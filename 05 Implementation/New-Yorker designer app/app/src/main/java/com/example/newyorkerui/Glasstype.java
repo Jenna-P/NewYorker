@@ -22,7 +22,7 @@ public class Glasstype extends AppCompatActivity {
 
     private void launchActivity() {
 
-        Intent intente = new Intent(this, Doortype.class);
+        Intent intente = new Intent(this, ShowWall.class);
         startActivity(intente);
     }
 }
