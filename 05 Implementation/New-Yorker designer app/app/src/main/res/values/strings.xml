@@ -61,5 +61,13 @@
     <string name="satin_glas">Satin glas</string>
     <string name="lyd_glas">Lyd glas</string>
     <string name="tilpas_design">Tilpas Design</string>
+    <string name="antal_fag">Antal Fag</string>
+    <string name="_0">0</string>
+    <string name="antal_glas">Antal Glas</string>
+    <string name="_0">0</string>
+    <string name="pris">Pris</string>
+    <string name="_9_850">9.850</string>
+    <string name="dkk">DKK</string>
+    <string name="indtast_bredden_p_v_ggen" />
 
 </resources>

@@ -10,23 +10,29 @@ import android.widget.EditText;
 public class UserMeasurements extends AppCompatActivity {
 
     Button switchButton;
+    EditText height_input;
+    EditText width_input;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usermeasurements);
 
-        //tilslutter UI til kode
-        switchButton = (Button) findViewById(R.id.makeoffer);
+        height_input = (EditText) findViewById(R.id.height_input);
+        width_input = (EditText) findViewById(R.id.width_input);
 
-        //Brugerens input
-        EditText hEdit = (EditText) findViewById(R.id.userheight);
-        EditText wEdit = (EditText) findViewById(R.id.userwidth);
-
+        switchButton = (Button) findViewById(R.id.makeoffer);;
         switchButton.setOnClickListener(view -> launchActivity());
     }
+
     private void launchActivity() {
+
+        String w = width_input.getText().toString();
+        String h = height_input.getText().toString();
+
         Intent intent = new Intent(this, ShowWall.class);
+        intent.putExtra("height", h);
+        intent.putExtra("width", w);
         startActivity(intent);
     }
 }
