@@ -34,5 +34,25 @@
     <string name="bredde_40_cm">Bredde: 40 CM</string>
     <string name="h_jde_180_cm">Højde: 180 CM</string>
     <string name="pris_4_700">Pris: 4.700,-</string>
+    <string name="v_lg_en_type_af_d_r">Vælg en type af dør</string>
+    <string name="enkeltd_r_uden_l_sekasse">Enkeltdør uden låsekasse</string>
+    <string name="dubeltd_r_uden_l_sekasse">dubeltdør uden låsekasse</string>
+    <string name="enkeltd_r_med_l_sekasse">enkeltdør med låsekasse</string>
+    <string name="enkelt_skyded_r">enkelt skydedør</string>
+    <string name="dubelt_skyded_r">dubelt skydedør</string>
+    <string name="dubeltd_r_med_l_sekasse">dubeltdør med låsekasse</string>
+    <string name="v_lg_d_r">Vælg dør</string>
+    <string name="dubbeltd_r_uden_l_sekasse">Dubbeltdør uden låsekasse</string>
+    <string name="dubbeltd_r_med_l_sekasse">Dubbeltdør med låsekasse</string>
+    <string name="dubbelt_skyded_r_uden_l_s">Dubbelt skydedør uden lås</string>
+    <string name="enkelt_skyded_r_uden_l_s">Enkelt skydedør uden lås</string>
+    <string name="enkeltd_r_med_l_sekassee">Enkeltdør med låsekasse</string>
+    <string name="messing_langgreb">Messing langgreb</string>
+    <string name="st_l_langgreb">Stål langgreb</string>
+    <string name="sort_langgreb">Sort langgreb</string>
+    <string name="st_l_langgreb_2_sidet">Stål langgreb 2 sidet</string>
+    <string name="sort_langgreb_to_sidet">Sort langgreb to sidet</string>
+    <string name="messing_langgreb_2_sidet">Messing langgreb 2 sidet</string>
+    <string name="v_lg_d_rh_ndtag">Vælg dørhåndtag</string>
 
 </resources>
