@@ -54,5 +54,12 @@
     <string name="sort_langgreb_to_sidet">Sort langgreb to sidet</string>
     <string name="messing_langgreb_2_sidet">Messing langgreb 2 sidet</string>
     <string name="v_lg_d_rh_ndtag">Vælg dørhåndtag</string>
+    <string name="videre">Videre</string>
+    <string name="v_lg_typen_af_glas_i_v_ggen">Vælg typen af glas i væggen</string>
+    <string name="skal_v_ggen_have_en_d_r">Skal væggen have en dør?</string>
+    <string name="standard_glas">Standard glas</string>
+    <string name="satin_glas">Satin glas</string>
+    <string name="lyd_glas">Lyd glas</string>
+    <string name="tilpas_design">Tilpas Design</string>
 
 </resources>

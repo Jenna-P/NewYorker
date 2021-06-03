@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewYorkerUI">
-        <activity android:name=".doorhandletype"></activity>
+        <activity android:name=".glasstype"></activity>
+        <activity android:name=".doorhandletype" />
         <activity android:name=".doortype" />
         <activity android:name=".Loadingscreen" />
         <activity android:name=".ShowAccept" />
