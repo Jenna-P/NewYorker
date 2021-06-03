@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".doorhandletype">
+    tools:context=".Doorhandletype">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".doortype">
+        tools:context=".Doortype">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -29,11 +29,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="230dp"
             android:fontFamily="@font/roboto"
-            android:text="@string/v_lg_en_type_af_d_r"
+            android:text="@string/v_lg_type_af_d_rgreb"
             android:textAllCaps="true"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
@@ -98,6 +99,7 @@
             android:layout_marginLeft="100dp"
             android:layout_marginTop="8dp"
             android:text="@string/sort_langgreb_to_sidet"
+            app:layout_constraintBottom_toTopOf="@+id/chooseDoorHandleType"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -116,36 +118,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Choice3" />
 
+        <Button
+            android:id="@+id/chooseDoorHandleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:text="@string/v_lg_d_rh_ndtag"
+            app:backgroundTint="#BF8E55"
+            app:iconPadding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Button
-        android:id="@+id/chooseDoorHandleType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:text="@string/v_lg_d_rh_ndtag"
-        app:backgroundTint="#BF8E55"
-        app:iconPadding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/acceptcadmeasurements"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/doorChoice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="230dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/v_lg_en_type_af_d_r"
-        android:textAllCaps="true"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

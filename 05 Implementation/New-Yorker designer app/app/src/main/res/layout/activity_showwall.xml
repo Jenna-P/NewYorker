@@ -26,7 +26,19 @@
 
     <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="@+id/imageView6" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintEnd_toEndOf="@+id/imageView6" android:id="@+id/AntalGlas" app:layout_constraintStart_toEndOf="@+id/wallDesign" android:text="@string/antal_glas" android:textStyle="bold" android:textSize="18sp" android:textColor="@color/white" android:textAllCaps="true" android:fontFamily="@font/roboto" android:layout_marginTop="100dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
 
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintVertical_bias="0.228" app:layout_constraintTop_toTopOf="@+id/imageView6" app:layout_constraintHorizontal_bias="0.696" app:layout_constraintEnd_toEndOf="parent" android:id="@+id/glasInput" app:layout_constraintStart_toEndOf="@+id/AntalFag" app:layout_constraintBottom_toBottomOf="parent" android:text="@string/_0" android:textSize="18sp" android:textColor="#FFFFFF"/>
+    <TextView
+        android:id="@+id/glasInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.696"
+        app:layout_constraintStart_toEndOf="@+id/AntalFag"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.228" />
 
     <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="@+id/imageView6" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintEnd_toEndOf="@+id/imageView6" android:id="@+id/Pris" app:layout_constraintStart_toEndOf="@+id/wallDesign" android:text="@string/pris" android:textStyle="bold" android:textSize="18sp" android:textColor="@color/white" android:textAllCaps="true" android:fontFamily="@font/roboto" android:layout_marginTop="156dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
 

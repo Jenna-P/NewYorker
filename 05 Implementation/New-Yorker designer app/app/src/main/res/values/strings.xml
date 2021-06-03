@@ -25,7 +25,6 @@
     <string name="vis_design">Vis design</string>
     <string name="opret_et_tilbud">opret et tilbud</string>
     <string name="forhandler">Forhandler</string>
-    <string name="pris">Pris</string>
     <string name="_47_dkr">47 DKR</string>
     <string name="din_kommentar">Din kommentar</string>
     <string name="se_katalouge">Se katalouge</string>
@@ -62,12 +61,12 @@
     <string name="lyd_glas">Lyd glas</string>
     <string name="tilpas_design">Tilpas Design</string>
     <string name="antal_fag">Antal Fag</string>
-    <string name="_0">0</string>
     <string name="antal_glas">Antal Glas</string>
-    <string name="_0">0</string>
     <string name="pris">Pris</string>
     <string name="_9_850">9.850</string>
     <string name="dkk">DKK</string>
     <string name="indtast_bredden_p_v_ggen" />
+    <string name="_0">0</string>
+    <string name="v_lg_type_af_d_rgreb">Vælg type af dørgreb</string>
 
 </resources>
