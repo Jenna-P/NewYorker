@@ -21,47 +21,37 @@ public class ShowWall extends AppCompatActivity {
     WallLayout wall = new WallLayout();
     CalculateOffer cal = new CalculateOffer();
 
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_showwall);
-
         setDesignAndPrice();
-
 
         switchButton = (Button) findViewById(R.id.acceptwall);
         switchButton.setOnClickListener(view -> launchActivity());
 
         tilpasDesign = (Button) findViewById(R.id.tilpasDesign);
         tilpasDesign.setOnClickListener(view -> adjustDesign());
-
     }
 
     private void launchActivity() {
 
         Intent intent = new Intent(this, UserContact.class);
-
         startActivity(intent);
     }
 
     private  void adjustDesign(){
-        Intent intent = new Intent(this, Glasstype.class);
-
-        startActivity(intent);
+        Intent intenta = new Intent(this, Glasstype.class);
+        startActivity(intenta);
 
     }
 
 
     public void setDesignAndPrice() {
-        frameInput = (TextView) findViewById(R.id.fagInput);
-        glasInput = (TextView) findViewById(R.id.glasInput);
-        priceInput = (TextView) findViewById(R.id.prisInput);
-        wallDesign = (ImageView) findViewById(R.id.wallDesign);
+        frameInput = findViewById(R.id.fagInput);
+        glasInput = findViewById(R.id.glasInput);
+        priceInput = findViewById(R.id.prisInput);
+        wallDesign = findViewById(R.id.wallDesign);
 
         Intent i = getIntent();
         Bundle bundle = i.getExtras();
@@ -73,16 +63,16 @@ public class ShowWall extends AppCompatActivity {
 
         int heightInput = Integer.parseInt(h);
         int totalPane = wall.calculatePane(heightInput);
-        int totalGlas = totalFrame * wall.calculatePane(heightInput);
+        int totalGlass = totalFrame * wall.calculatePane(heightInput);
 
-        double price = cal.calculatePrice(totalGlas);
+        double price = cal.calculatePrice(totalGlass);
 
         String setTotalFrame = String.valueOf(totalFrame);
-        String setTotalGlas = String.valueOf(totalGlas);
+        String setTotalGlass = String.valueOf(totalGlass);
         String setPrice = String.valueOf(price);
 
         frameInput.setText(setTotalFrame);
-        glasInput.setText(setTotalGlas);
+        glasInput.setText(setTotalGlass);
         priceInput.setText(setPrice);
 
         if(totalFrame == 1 && totalPane == 4) {
@@ -108,10 +98,5 @@ public class ShowWall extends AppCompatActivity {
         } else if (totalFrame ==6 && totalPane == 4) {
             wallDesign.setImageResource(R.drawable.a64);
         }
-
-
     }
-
-
-
 }

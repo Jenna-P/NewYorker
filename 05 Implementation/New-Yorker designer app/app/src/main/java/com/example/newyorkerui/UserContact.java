@@ -19,13 +19,13 @@ public class UserContact extends AppCompatActivity {
         setContentView(R.layout.activity_usercontact);
 
         //tilslutter UI til kode
-        switchButton = (Button) findViewById(R.id.sendorder);;
+        switchButton = findViewById(R.id.sendorder);
 
         //brugerens input
-        EditText uName = (EditText) findViewById(R.id.name);
-        EditText uEmail = (EditText) findViewById(R.id.email);
-        EditText uPhone = (EditText) findViewById(R.id.phone);
-        EditText uComments = (EditText) findViewById(R.id.comments);
+        EditText uName = findViewById(R.id.name);
+        EditText uEmail = findViewById(R.id.email);
+        EditText uPhone = findViewById(R.id.phone);
+        EditText uComments = findViewById(R.id.comments);
         View uMaker = findViewById(R.id.dropdownlist);
 
         switchButton.setOnClickListener(view -> launchActivity());
@@ -33,7 +33,7 @@ public class UserContact extends AppCompatActivity {
 
     private void launchActivity() {
 
-        Intent intent = new Intent(this, ShowAccept.class);
-        startActivity(intent);
+        Intent intentu = new Intent(this, ShowAccept.class);
+        startActivity(intentu);
     }
 }

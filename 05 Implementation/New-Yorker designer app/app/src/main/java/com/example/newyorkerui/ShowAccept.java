@@ -18,14 +18,14 @@ public class ShowAccept extends AppCompatActivity {
 
         View wallPicture = findViewById(R.id.wallpicture);
 
-        switchButton = (Button) findViewById(R.id.makeoffer);
+        switchButton = findViewById(R.id.makeoffer);
 
         switchButton.setOnClickListener(view -> launchActivity());
     }
 
     private void launchActivity() {
 
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        Intent intents = new Intent(this, MainActivity.class);
+        startActivity(intents);
     }
 }
