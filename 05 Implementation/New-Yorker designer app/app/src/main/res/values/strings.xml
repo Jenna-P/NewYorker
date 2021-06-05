@@ -69,5 +69,6 @@
     <string name="_0">0</string>
     <string name="v_lg_type_af_d_rgreb">Vælg type af dørgreb</string>
     <string name="tilvalg_d_r">Tilvalg Dør</string>
+    <string name="textview">TextView</string>
 
 </resources>

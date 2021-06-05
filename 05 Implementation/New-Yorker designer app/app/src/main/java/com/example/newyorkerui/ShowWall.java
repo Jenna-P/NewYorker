@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.TestLooperManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -15,9 +16,7 @@ import NewYorkerApp.CalculateOffer;
 public class ShowWall extends AppCompatActivity {
 
     Button switchButton, tilpasDesign;
-    TextView frameInput;
-    TextView glasInput;
-    TextView priceInput;
+    TextView frameInput, glasInput, priceInput, glassType_tv;
     ImageView wallDesign;
     WallLayout wall = new WallLayout();
     CalculateOffer cal = new CalculateOffer();
@@ -32,8 +31,10 @@ public class ShowWall extends AppCompatActivity {
         setContentView(R.layout.activity_showwall);
         setDesignAndPrice();
 
+
         switchButton = (Button) findViewById(R.id.acceptwall);
         tilpasDesign = (Button) findViewById(R.id.tilpasDesign);
+        glassType_tv = (TextView) findViewById(R.id.glassType_tv);
 
         switchButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,16 +47,17 @@ public class ShowWall extends AppCompatActivity {
         tilpasDesign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String calGlassPrice = priceInput.getText().toString();
+                String totalGlass = glasInput.getText().toString();
+
                 Intent myIntent = new Intent(ShowWall.this, Glasstype.class);
+                myIntent.putExtra("forGlassPrice", calGlassPrice);
+                myIntent.putExtra("totalGlass", totalGlass);
                 startActivity(myIntent);
             }
         });
 
     }
-
-
-
-
 
     public void setDesignAndPrice() {
         frameInput = findViewById(R.id.fagInput);
@@ -109,4 +111,6 @@ public class ShowWall extends AppCompatActivity {
             wallDesign.setImageResource(R.drawable.a64);
         }
     }
+
+
 }

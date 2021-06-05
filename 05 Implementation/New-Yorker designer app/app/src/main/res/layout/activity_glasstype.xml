@@ -7,7 +7,7 @@
     tools:context=".Glasstype">
 
     <EditText
-        android:id="@+id/editTextNumberDecimal2"
+        android:id="@+id/priceWithGlass"
         android:layout_width="206dp"
         android:layout_height="42dp"
         android:layout_marginBottom="152dp"
@@ -84,7 +84,7 @@
         android:id="@+id/glasstypeinwalltext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="484dp"
+        android:layout_marginBottom="468dp"
         android:fontFamily="@font/roboto"
         android:text="@string/v_lg_typen_af_glas_i_v_ggen"
         android:textAllCaps="true"
@@ -92,7 +92,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -157,11 +157,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="12dp"
-            android:onClick="checkButton"
             android:text="@string/satin_glas"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            />
 
         <RadioButton
             android:id="@+id/radioButton3"
@@ -169,12 +169,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="12dp"
-            android:onClick="checkButton"
             android:text="@string/lyd_glas"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.456"
             app:layout_constraintStart_toEndOf="@+id/radioButton2"
-            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView14"
+           />
 
 
     </RadioGroup>
