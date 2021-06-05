@@ -30,7 +30,7 @@ public class UserMeasurements extends AppCompatActivity {
         String w = width_input.getText().toString();
         String h = height_input.getText().toString();
 
-        Intent intent = new Intent(this, ShowWall.class);
+        Intent intent = new Intent(UserMeasurements.this, ShowWall.class);
         intent.putExtra("height", h);
         intent.putExtra("width", w);
         startActivity(intent);

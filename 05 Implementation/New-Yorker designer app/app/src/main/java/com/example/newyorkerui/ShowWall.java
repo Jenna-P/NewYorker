@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,6 +22,10 @@ public class ShowWall extends AppCompatActivity {
     WallLayout wall = new WallLayout();
     CalculateOffer cal = new CalculateOffer();
 
+    private void startMyActivity(Intent intent) {
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,23 +33,28 @@ public class ShowWall extends AppCompatActivity {
         setDesignAndPrice();
 
         switchButton = (Button) findViewById(R.id.acceptwall);
-        switchButton.setOnClickListener(view -> launchActivity());
-
         tilpasDesign = (Button) findViewById(R.id.tilpasDesign);
-        tilpasDesign.setOnClickListener(view -> adjustDesign());
+
+        switchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(ShowWall.this, UserContact.class);
+                startMyActivity(myIntent);
+            }
+        });
+
+        tilpasDesign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(ShowWall.this, Glasstype.class);
+                startActivity(myIntent);
+            }
+        });
+
     }
 
-    private void launchActivity() {
 
-        Intent intent = new Intent(this, UserContact.class);
-        startActivity(intent);
-    }
 
-    private  void adjustDesign(){
-        Intent intenta = new Intent(this, Glasstype.class);
-        startActivity(intenta);
-
-    }
 
 
     public void setDesignAndPrice() {

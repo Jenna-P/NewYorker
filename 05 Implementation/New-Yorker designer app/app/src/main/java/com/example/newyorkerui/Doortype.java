@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class Doortype extends AppCompatActivity {
@@ -16,12 +17,14 @@ public class Doortype extends AppCompatActivity {
         setContentView(R.layout.activity_doortype);
 
         switchButton = (Button) findViewById(R.id.chooseDoorHandleType);
-        switchButton.setOnClickListener(view -> launchActivity());
-    }
+//       switchButton.setOnClickListener(new View.OnClickListener() {
+//           @Override
+//           public void onClick(View v) {
+//               Intent intent = new Intent(Doortype.this, Doorhandletype.class);
+//               startActivity(intent);
+//           }
+//       });
 
-    private void launchActivity() {
 
-        Intent intent = new Intent(this, Doorhandletype.class);
-        startActivity(intent);
     }
 }

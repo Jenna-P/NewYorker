@@ -21,7 +21,7 @@ public class Doorhandletype extends AppCompatActivity {
 
     private void launchActivity() {
 
-        Intent intent = new Intent(this, ShowWall.class);
+        Intent intent = new Intent(Doorhandletype.this, ShowWall.class);
         startActivity(intent);
     }
 }

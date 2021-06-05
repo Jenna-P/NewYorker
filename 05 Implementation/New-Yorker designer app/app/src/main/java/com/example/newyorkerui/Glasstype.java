@@ -19,6 +19,9 @@ public class Glasstype extends AppCompatActivity {
     RadioButton rb;
     CheckBox cb;
 
+    public Intent intent;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,23 +30,28 @@ public class Glasstype extends AppCompatActivity {
         cb = (CheckBox) findViewById(R.id.checkBox);
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
         switchButton = (Button) findViewById(R.id.AcceptGlasstype);
-        switchButton.setOnClickListener(view -> launchActivity());
+        switchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        if(cb.isChecked()) {
-            Toast.makeText(this, "Dør valgt ",
-                    Toast.LENGTH_SHORT).show();
-        }
+              if(cb.isChecked()) {
+                  intent = new Intent(Glasstype.this, Doortype.class);
+                 startActivity(intent);
+              }
+             else {
+                  intent = new Intent(Glasstype.this, ShowWall.class);
+                  startActivity(intent);
+              }
+
+
+            }
+        });
+
 
     }
 
 
-    private void launchActivity() {
 
-
-            Intent intente = new Intent(this, ShowWall.class);
-            startActivity(intente);
-
-    }
 
     public void checkButton(View v) {
         int radioId = radioGroup.getCheckedRadioButtonId();

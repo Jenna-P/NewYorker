@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,26 +12,36 @@ public class MainActivity extends AppCompatActivity {
     Button switchButton;
     Button catalogButton;
 
+    private void startMyActivity(Intent intent) {
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        catalogButton = (Button) findViewById(R.id.catalougeButton);;
-        catalogButton.setOnClickListener(view -> showCatalog());
+        catalogButton = (Button) findViewById(R.id.catalougeButton);
+        switchButton = (Button) findViewById(R.id.nextActivityButton);
 
-        switchButton = (Button) findViewById(R.id.nextActivityButton);;
-        switchButton.setOnClickListener(view -> launchActivity());
+        switchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, UserMeasurements.class);
+                startMyActivity(myIntent);
+            }
+        });
+
+        catalogButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, Catalogue.class);
+                startActivity(myIntent);
+            }
+        });
+
+
     }
 
-    private void showCatalog() {
-        Intent intente = new Intent(this, Catalogue.class);
-        startActivity(intente);
-    }
 
-    private void launchActivity() {
-
-        Intent intent = new Intent(this, UserMeasurements.class);
-        startActivity(intent);
-    }
 }
