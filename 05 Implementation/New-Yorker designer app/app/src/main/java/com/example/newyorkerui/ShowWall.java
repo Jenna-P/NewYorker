@@ -16,7 +16,7 @@ import NewYorkerApp.CalculateOffer;
 public class ShowWall extends AppCompatActivity {
 
     Button switchButton, tilpasDesign;
-    TextView frameInput, glasInput, priceInput, glassType_tv;
+    TextView frameInput, glasInput, priceInput;
     ImageView wallDesign;
     WallLayout wall = new WallLayout();
     CalculateOffer cal = new CalculateOffer();
@@ -34,7 +34,7 @@ public class ShowWall extends AppCompatActivity {
 
         switchButton = (Button) findViewById(R.id.acceptwall);
         tilpasDesign = (Button) findViewById(R.id.tilpasDesign);
-        glassType_tv = (TextView) findViewById(R.id.glassType_tv);
+
 
         switchButton.setOnClickListener(new View.OnClickListener() {
             @Override

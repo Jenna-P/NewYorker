@@ -42,15 +42,6 @@ import java.util.Scanner;
         }
 
 
-        public double calPaneSize(int h) {
-            totalPane = calculatePane(200); //i parametre skal det være hent(set) user input
-            this.height = h;
-            double size = height / totalPane;
-            System.out.println("antal ruder : " + totalPane);
-            System.out.println("size : " + size);
-            return size;
-        }
-
 
         public int calculateFrame(int width) {
             for (int i = 1; i < 100; i++) {
@@ -65,14 +56,7 @@ import java.util.Scanner;
             return totalFrame;
         }
 
-        public double calFrameSize(int w) {
-            totalFrame = calculateFrame(120);
-            this.width = w;
-            double size = width / totalFrame;
-            System.out.println("antal fag : " + totalFrame);
-            System.out.println("size : " + size);
-            return size;
-        }
+
 
 
 

@@ -7,6 +7,7 @@ public class PersonData {
     private String phoneNumber;
 
 
+
     public String getName() {
         //hente fra bruger input
         return name;
@@ -20,5 +21,17 @@ public class PersonData {
     public String getPhoneNumber() {
         //hente fra bruger input
         return phoneNumber;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

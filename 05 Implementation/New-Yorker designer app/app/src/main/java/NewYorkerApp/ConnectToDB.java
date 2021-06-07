@@ -12,11 +12,13 @@ public class ConnectToDB {
         Connection conn = null;
         try {
             // db parameters
-            String url = "jdbc:sqlite:C:/Users/Stuen/SQLITE/NewYorker.db";
+            String url = "jdbc:sqlite:Users/jennapetersen/Desktop/NewYorker.db";
             // create a connection to the database
+            Class.forName("org.sqlite.JDBC");
+
             conn = DriverManager.getConnection(url);
 
-        } catch (SQLException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             System.out.println(e.getMessage());
 
         }
@@ -62,7 +64,7 @@ public class ConnectToDB {
         Connection conn = null;
         try {
             // db parameters
-            String url = "jdbc:sqlite:C:/Users/Stuen/SQLITE/NewYorker.db";
+            //String url = "/Users/jennapetersen/AndroidStudioProjects/NewYorker-UI_Iteration2_1/05 Implementation/New-Yorker designer app/app/src/main/java/DB/NewYorker.db";
             // create a connection to the database
             conn = connectToDB();
 
@@ -116,4 +118,12 @@ public class ConnectToDB {
 
 
     }
+
+//    public static void main(String[] args) {
+//        insertIntoPersonData("jenna", "53", "jennafuttrup@gmail.com");
+//        selectFromPersonData("jennafuttrup@gmail.com");
+//    }
+
+
+
 }

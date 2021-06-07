@@ -10,6 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import AndroidSQLite.DbAdapter;
+import NewYorkerApp.ConnectToDB;
+import NewYorkerApp.PersonData;
+
 public class UserContact extends AppCompatActivity {
 
     Button switchButton;
@@ -18,6 +22,8 @@ public class UserContact extends AppCompatActivity {
     public  EditText uEmail;
     public  EditText uPhone;
     public  EditText uComments;
+
+    DbAdapter db; // Android Sqlite
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +40,8 @@ public class UserContact extends AppCompatActivity {
         uComments = findViewById(R.id.comments);
         View uMaker = findViewById(R.id.dropdownlist);
 
+        db = new DbAdapter(this);
+
         switchButton.setOnClickListener(view -> launchActivity());
     }
 
@@ -41,6 +49,8 @@ public class UserContact extends AppCompatActivity {
 
        // Intent intentu = new Intent(this, ShowAccept.class);
       //  startActivity(intentu);
+
+        getPersonData();
 
         //test to send mail instead to show confirm activity
         Intent intent = new Intent(Intent.ACTION_SENDTO);
@@ -52,4 +62,24 @@ public class UserContact extends AppCompatActivity {
         intent.setData(Uri.parse("mailto:"));
         startActivity(intent);
     }
+
+    public void getPersonData() {
+        PersonData pd = new PersonData();
+       // ConnectToDB cd = new ConnectToDB();
+
+       String dataName = uName.getText().toString();
+       String dataEmail = uEmail.getText().toString();
+       String dataPhone = uPhone.getText().toString();
+
+       pd.setName(dataName);
+       pd.setEmail(dataEmail);
+       pd.setPhoneNumber(dataPhone);
+
+      // cd.insertIntoPersonData(pd.getName(),pd.getPhoneNumber(),pd.getEmail());
+        db.insertData(pd.getName(),pd.getEmail(),pd.getPhoneNumber());
+
+        System.out.println(db.getData()); //see data is inserted right
+    }
+
+
 }
