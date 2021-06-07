@@ -1,6 +1,6 @@
 ***NewYorker Væg:***
 
--NewYorker væggen, er et produkt som firmaet new-yorker udvikler. Denne væg består af en stålramme, med glasruder. Der kan tilføjes en dør, hvis det ønskes.
+-NewYorker væggen, er et produkt som firmaet new-yorker, en del af byens vinduer udvikler. Denne væg består af en stålramme, med glasruder. Der kan tilføjes en dør, hvis det ønskes.
 
 ***Højden:***
 
