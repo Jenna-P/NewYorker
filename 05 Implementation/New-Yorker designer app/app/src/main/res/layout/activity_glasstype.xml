@@ -124,7 +124,7 @@
         app:layout_constraintVertical_bias="0.482" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/radioGroup_door"
         android:layout_width="383dp"
         android:layout_height="67dp"
         android:orientation="horizontal"
@@ -184,7 +184,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup_door"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent"
@@ -197,7 +197,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginTop="3dp"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup_door"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.236"
         app:layout_constraintStart_toEndOf="@+id/standardImg"
@@ -209,7 +209,7 @@
         android:id="@+id/lydImg"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup_door"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toEndOf="@+id/satinImg"

@@ -10,10 +10,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import NewYorkerApp.CalculateOffer;
+import Logic.CalculateOffer;
 
 public class Glasstype extends AppCompatActivity {
 
@@ -35,7 +33,7 @@ public class Glasstype extends AppCompatActivity {
         setContentView(R.layout.activity_glasstype);
 
         cb = (CheckBox) findViewById(R.id.checkBox);
-        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        radioGroup = (RadioGroup) findViewById(R.id.radioGroup_door);
         switchButton = (Button) findViewById(R.id.AcceptGlasstype);
         priceWithGlass = (EditText) findViewById(R.id.priceWithGlass);
         rb = (RadioButton) findViewById(R.id.radioButton1);
@@ -88,13 +86,17 @@ public class Glasstype extends AppCompatActivity {
 
                 rb = findViewById(radioId);
                 String str = rb.getText().toString();
+                String cal_price = priceWithGlass.getText().toString(); // get price value to pass to DoorType activity
 
               if(cb.isChecked()) {
                   intent = new Intent(Glasstype.this, Doortype.class);
+                  intent.putExtra("calPrice", cal_price);
+                  intent.putExtra("totalGlass", totalGlass); //passing value
                  startActivity(intent);
               }
              else {
                   intent = new Intent(Glasstype.this, ShowWall.class);
+                  intent.putExtra("calPrice", cal_price);
                   startActivity(intent);
               }
 

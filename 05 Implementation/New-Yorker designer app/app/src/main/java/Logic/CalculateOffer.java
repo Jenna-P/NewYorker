@@ -1,4 +1,4 @@
-package NewYorkerApp;
+package Logic;
 
 public class CalculateOffer {
 
@@ -10,8 +10,8 @@ public class CalculateOffer {
     double satinGlass = 70;
     double lydGlass = 95;
     double lockCase = 500;
-    double singleDoor = 2000;
-    double doubleDoor = 4000;
+    public double singleDoor = 2000;
+    public double doubleDoor = 4000;
     double singleSlideDoor = 2480;
     double doubleSlideDoor = 4960;
     double messing = 500;
@@ -44,20 +44,27 @@ public class CalculateOffer {
         return totalGlass * lydGlass * VAT;
     }
 
-    public double calculateDoor(int totalGlass, String doorType) {
+    public double calculateDoor(int totalglass, String doorType) {
 
         if (doorType.equals("Enkeltdør uden låsekasse")) {
-            return singleDoor * VAT;
+            return (totalglass * glassPanelPrice + singleDoor) * VAT;
 
         } else if (doorType.equals("Enkeltdør med låsekasse")) {
-            return (singleDoor + lockCase) * VAT;
+            return (totalglass * glassPanelPrice + singleDoor + lockCase) * VAT;
 
         } else if (doorType.equals("Dobbeltdør uden låsekasse")) {
-            return doubleDoor * VAT;
+            return (totalglass * glassPanelPrice + doubleDoor) * VAT;
 
         }else if (doorType.equals("Dobbeltdør med låsekasse")) {
-            return (doubleDoor + 2*lockCase) * VAT;
+            return (totalglass * glassPanelPrice + doubleDoor + lockCase) * VAT;
+
+        }else if (doorType.equals("Enkelt skydedør")) {
+            return (totalglass * glassPanelPrice + singleSlideDoor) * VAT;
+
+        }else if (doorType.equals("Dobbelt skydedør")) {
+            return (totalglass * glassPanelPrice + doubleSlideDoor) * VAT;
         }
+
 
         return 0;
     }

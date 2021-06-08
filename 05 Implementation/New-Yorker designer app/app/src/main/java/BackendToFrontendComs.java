@@ -1,9 +1,9 @@
 import com.example.newyorkerui.UserContact;
 import com.example.newyorkerui.UserMeasurements;
 
-import NewYorkerApp.PersonData;
-import NewYorkerApp.CalculateOffer;
-import NewYorkerApp.WallLayout;
+import Model.PersonData;
+import Logic.CalculateOffer;
+import Logic.WallLayout;
 //Denne klasse fungere som et led, mellem Frontend, og Backend.
 //På denne måde, kan vi overholde "clean architecture", der UI ikke er i direktig forbindelse med systemet.
 //alt hvad denne klasse gør, er at tage info fra den ene, og gør det klar til den anden.

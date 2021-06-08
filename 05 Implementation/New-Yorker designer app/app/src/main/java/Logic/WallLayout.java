@@ -1,4 +1,4 @@
-package NewYorkerApp;
+package Logic;
 
 import java.util.Scanner;
 

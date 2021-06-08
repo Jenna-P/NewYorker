@@ -1,4 +1,4 @@
-package NewYorkerApp;
+package Model;
 
 public class PersonData {
 

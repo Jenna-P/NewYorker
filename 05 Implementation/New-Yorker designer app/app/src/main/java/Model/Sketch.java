@@ -1,4 +1,6 @@
-package NewYorkerApp;
+package Model;
+
+import Logic.WallLayout;
 
 public class Sketch {
 

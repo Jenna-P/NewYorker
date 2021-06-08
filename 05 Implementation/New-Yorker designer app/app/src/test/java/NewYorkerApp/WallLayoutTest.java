@@ -2,6 +2,8 @@ package NewYorkerApp;
 
 import org.junit.Test;
 
+import Logic.WallLayout;
+
 import static org.junit.Assert.*;
 
 public class WallLayoutTest {

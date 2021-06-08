@@ -5,14 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.DropBoxManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import AndroidSQLite.DbAdapter;
-import NewYorkerApp.ConnectToDB;
-import NewYorkerApp.PersonData;
+import Logic.DbAdapter;
+import Model.PersonData;
 
 public class UserContact extends AppCompatActivity {
 

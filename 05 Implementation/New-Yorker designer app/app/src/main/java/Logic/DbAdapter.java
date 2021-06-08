@@ -1,4 +1,4 @@
-package AndroidSQLite;
+package Logic;
 
 import android.content.ContentValues;
 import android.content.Context;

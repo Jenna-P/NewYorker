@@ -1,8 +1,8 @@
-package NewYorkerApp;
+package Model;
 
 import java.util.ArrayList;
 
-public class GlassType {
+public class GlassType_M {
 
     private ArrayList<String> glassList = new ArrayList<>();
 

@@ -1,8 +1,8 @@
-package NewYorkerApp;
+package Model;
 
 import java.util.ArrayList;
 
-public class DoorHandleType {
+public class DoorHandleType_M {
 
     private ArrayList<String> doorHandleList = new ArrayList<>();
 
