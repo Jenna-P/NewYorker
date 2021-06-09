@@ -55,3 +55,15 @@
  Dette vises oftest i form at et tilbud, og når man bytter, bliver det kaldt “en handel”.
 
  I dag, er nogle af de mere kendte forhandlere af byggematerialer, firmaet  “XL”, “STARK”, samt “Hjem og fix”.
+ 
+ ***Backend***
+ 
+ -Er alt hvad der forgår i programmet, som brugeren ikke kan se.
+ 
+ ***Frontend***
+ 
+ -Er alt hvad der forgår i programmet, som brugeren kan se. Detter er mest UI.
+ 
+ ***UI***
+ 
+ -Står for UserInterface, og er alt hvad brugeren kan se, og trykke på.
