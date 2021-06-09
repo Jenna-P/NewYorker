@@ -7,7 +7,7 @@
     tools:context=".Doortype">
 
     <EditText
-        android:id="@+id/priceWithDoorHandle"
+        android:id="@+id/totalPrice_dt"
         android:layout_width="176dp"
         android:layout_height="46dp"
         android:layout_marginBottom="95dp"
@@ -54,11 +54,11 @@
         app:layout_constraintVertical_bias="0.329" />
 
     <Button
-        android:id="@+id/ChooseDoorHandleType"
+        android:id="@+id/ok_dt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
-        android:text="@string/v_lg_d_r"
+        android:text="@string/OK_chooseDoor"
         app:backgroundTint="#BF8E55"
         app:iconPadding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -102,7 +102,7 @@
         android:layout_width="323dp"
         android:layout_height="337dp"
         android:layout_centerInParent="true"
-        app:layout_constraintBottom_toTopOf="@+id/ChooseDoorHandleType"
+        app:layout_constraintBottom_toTopOf="@+id/ok_dt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/DoorChoice"
@@ -184,7 +184,7 @@
             android:layout_marginLeft="55dp"
             android:layout_marginTop="3dp"
             android:text="@string/dubbelt_skyded_r_uden_l_s"
-            app:layout_constraintBottom_toTopOf="@+id/ChooseDoorHandleType"
+            app:layout_constraintBottom_toTopOf="@+id/ok_dt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"

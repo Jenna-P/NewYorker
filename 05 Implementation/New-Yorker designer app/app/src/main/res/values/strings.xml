@@ -40,7 +40,7 @@
     <string name="enkelt_skyded_r">enkelt skydedør</string>
     <string name="dubelt_skyded_r">dubelt skydedør</string>
     <string name="dubeltd_r_med_l_sekasse">dobeltdør med låsekasse</string>
-    <string name="v_lg_d_r">Vælg dør</string>
+    <string name="OK_chooseDoor">OK</string>
     <string name="dubbeltd_r_uden_l_sekasse">Dobbeltdør uden låsekasse</string>
     <string name="dubbeltd_r_med_l_sekasse">Dobbeltdør med låsekasse</string>
     <string name="dubbelt_skyded_r_uden_l_s">Dobbelt skydedør</string>
@@ -69,5 +69,8 @@
     <string name="v_lg_type_af_d_rgreb">Vælg type af dørgreb</string>
     <string name="tilvalg_d_r">Tilvalg Dør</string>
     <string name="textview">TextView</string>
+    <string name="enkelt_door">EnkeltDør</string>
+    <string name="chosenDoor">valgtDør</string>
+    <string name="handle_chosen">handle</string>
 
 </resources>

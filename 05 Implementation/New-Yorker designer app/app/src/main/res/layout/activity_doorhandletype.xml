@@ -122,7 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
-        android:text="@string/v_lg_d_rh_ndtag"
+        android:text="@string/OK_chooseDoor"
         app:backgroundTint="#BF8E55"
         app:iconPadding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -131,7 +131,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/priceWithDoorHandle"
+        android:id="@+id/totalPrice_dh"
         android:layout_width="185dp"
         android:layout_height="44dp"
         android:layout_marginBottom="136dp"

@@ -14,8 +14,8 @@ import Logic.CalculateOffer;
 
 public class ShowWall extends AppCompatActivity {
 
-    Button switchButton, tilpasDesign;
-    TextView frameInput, glasInput, priceInput;
+    Button switchButton, adjust;
+    TextView totalFrame_sw, totalGlass_sw, totalPrice_sw;
     ImageView wallDesign;
     WallLayout wall = new WallLayout();
     CalculateOffer cal = new CalculateOffer();
@@ -32,7 +32,7 @@ public class ShowWall extends AppCompatActivity {
 
 
         switchButton = (Button) findViewById(R.id.acceptwall);
-        tilpasDesign = (Button) findViewById(R.id.tilpasDesign);
+        adjust = (Button) findViewById(R.id.adjust);
 
 
         switchButton.setOnClickListener(new View.OnClickListener() {
@@ -43,15 +43,17 @@ public class ShowWall extends AppCompatActivity {
             }
         });
 
-        tilpasDesign.setOnClickListener(new View.OnClickListener() {
+        adjust.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String calGlassPrice = priceInput.getText().toString();
-                String totalGlass = glasInput.getText().toString();
+                String totalPrice_sw_str = totalPrice_sw.getText().toString();
+                String totalGlass_sw_str = totalGlass_sw.getText().toString();
+                String totalFrame_sw_str = totalFrame_sw.getText().toString();
 
                 Intent myIntent = new Intent(ShowWall.this, Glasstype.class);
-                myIntent.putExtra("forGlassPrice", calGlassPrice);
-                myIntent.putExtra("totalGlass", totalGlass);
+                myIntent.putExtra("totalPrice_sw", totalPrice_sw_str);
+                myIntent.putExtra("totalGlass_sw", totalGlass_sw_str);
+                myIntent.putExtra("totalFrame_sw", totalFrame_sw_str);
                 startActivity(myIntent);
             }
         });
@@ -59,9 +61,9 @@ public class ShowWall extends AppCompatActivity {
     }
 
     public void setDesignAndPrice() {
-        frameInput = findViewById(R.id.fagInput);
-        glasInput = findViewById(R.id.glasInput);
-        priceInput = findViewById(R.id.prisInput);
+        totalFrame_sw = findViewById(R.id.totalFrame);
+        totalGlass_sw = findViewById(R.id.totalGlass);
+        totalPrice_sw = findViewById(R.id.totalPrice);
         wallDesign = findViewById(R.id.wallDesign);
 
         Intent i = getIntent();
@@ -82,9 +84,9 @@ public class ShowWall extends AppCompatActivity {
         String setTotalGlass = String.valueOf(totalGlass);
         String setPrice = String.valueOf(price);
 
-        frameInput.setText(setTotalFrame);
-        glasInput.setText(setTotalGlass);
-        priceInput.setText(setPrice);
+        totalFrame_sw.setText(setTotalFrame);
+        totalGlass_sw.setText(setTotalGlass);
+        totalPrice_sw.setText(setPrice);
 
         if(totalFrame == 1 && totalPane == 4) {
             wallDesign.setImageResource(R.drawable.a14);

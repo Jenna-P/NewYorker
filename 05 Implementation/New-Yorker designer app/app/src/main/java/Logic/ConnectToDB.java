@@ -20,6 +20,7 @@ public class ConnectToDB {
 
         } catch (SQLException | ClassNotFoundException e) {
             System.out.println(e.getMessage());
+
         }
         return conn;
     }

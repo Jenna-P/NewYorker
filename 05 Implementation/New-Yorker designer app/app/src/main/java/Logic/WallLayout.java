@@ -5,10 +5,13 @@ import java.util.Scanner;
 
 
     public class WallLayout {
+
+
         public int totalPane = 0;
         public int totalFrame = 0;
         public double height;
         public double width;
+
 
         public void createNewOffer(int height, int width) {
             //TODO vaildarer brugerinput
@@ -21,20 +24,43 @@ import java.util.Scanner;
             } else if(width < 0) {
                 System.out.println("Bredden er mindre end 0");
             }
+
         }
+
         public int calculatePane(int h) {
             this.height = h;
             for (int i = 1; i <= 100; i++) {
-                if (h / i <= 60) { totalPane = i; break;}
+                if (h / i <= 60) {
+                    totalPane = i;
+
+                    break;
+                }
             }
+
             return totalPane;
+
         }
+
+
+
         public int calculateFrame(int width) {
             for (int i = 1; i < 100; i++) {
-                if (width / i <= 45) { totalFrame = i; break; }
+                if (width / i <= 45) {
+                    totalFrame = i;
+
+                    break;
+                }
             }
+
+
             return totalFrame;
         }
+
+
+
+
+
+
     }
 
 

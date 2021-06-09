@@ -9,9 +9,9 @@ public class CalculateOffer {
     double glassPanelPrice = 985;
     double satinGlass = 70;
     double lydGlass = 95;
-    double lockCase = 500;
-    public double singleDoor = 2000;
-    public double doubleDoor = 4000;
+    public double lockCase = 500;
+    double singleDoor = 2000;
+    double doubleDoor = 4000;
     double singleSlideDoor = 2480;
     double doubleSlideDoor = 4960;
     double messing = 500;
@@ -44,28 +44,41 @@ public class CalculateOffer {
         return totalGlass * lydGlass * VAT;
     }
 
-    public double calculateDoor(int totalglass, String doorType) {
-
-        if (doorType.equals("Enkeltdør uden låsekasse")) {
-            return (totalglass * glassPanelPrice + singleDoor) * VAT;
-
-        } else if (doorType.equals("Enkeltdør med låsekasse")) {
-            return (totalglass * glassPanelPrice + singleDoor + lockCase) * VAT;
-
-        } else if (doorType.equals("Dobbeltdør uden låsekasse")) {
-            return (totalglass * glassPanelPrice + doubleDoor) * VAT;
-
-        }else if (doorType.equals("Dobbeltdør med låsekasse")) {
-            return (totalglass * glassPanelPrice + doubleDoor + lockCase) * VAT;
-
-        }else if (doorType.equals("Enkelt skydedør")) {
-            return (totalglass * glassPanelPrice + singleSlideDoor) * VAT;
-
-        }else if (doorType.equals("Dobbelt skydedør")) {
-            return (totalglass * glassPanelPrice + doubleSlideDoor) * VAT;
-        }
 
 
-        return 0;
+    public double chooseSingleDoor(int tg) {
+        return (tg * glassPanelPrice + singleDoor) * VAT;
+    }
+
+    public double chooseDoubleDoor(int tg) {
+        return (tg * glassPanelPrice + doubleDoor) * VAT;
+    }
+
+    public double chooseSingleSlideDoor(int tg) {
+        return (tg * glassPanelPrice + singleSlideDoor) * VAT;
+    }
+
+    public double chooseDoubleSlideDoor(int tg) {
+        return (tg * glassPanelPrice + doubleSlideDoor) * VAT;
+    }
+
+    public double chooseMessingOne(){
+
+        return messing * VAT;
+    }
+
+    public double chooseMessingTwo(){
+
+        return messing * 2 * VAT;
+    }
+
+    public double chooseBlackOne(){
+
+        return blackHandle * VAT;
+    }
+
+    public double chooseBlackTwo(){
+
+        return blackHandle * 2 * VAT;
     }
 }

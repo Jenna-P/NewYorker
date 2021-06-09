@@ -15,30 +15,87 @@ import Logic.CalculateOffer;
 public class Doortype extends AppCompatActivity {
 
     Button switchButton;
-    EditText priceWithDoor;
-    RadioGroup rg_door;
-    RadioButton rb_door;
-    public Intent intent;
+    EditText totalPrice_dt;
+    RadioGroup radioGroup_dt;
+    RadioButton radioButton_dt;
+    Intent intent;
+
+    CalculateOffer cal = new CalculateOffer();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doortype);
 
-        switchButton = (Button) findViewById(R.id.ChooseDoorHandleType);
-        priceWithDoor = (EditText) findViewById(R.id.priceWithDoorHandle);
-        rg_door = (RadioGroup) findViewById(R.id.radioGroup_door);
+        switchButton = (Button) findViewById(R.id.ok_dt);
+        totalPrice_dt = (EditText) findViewById(R.id.totalPrice_dt);
+        radioGroup_dt = (RadioGroup) findViewById(R.id.radioGroup_door);
 
+        //get data from gt(Glasstype) class
         intent = getIntent();
-        String price_str = intent.getStringExtra("calPrice");
-        priceWithDoor.setText(price_str);
+        Bundle bundle = intent.getExtras();
+        String totalFrame_dt_str = bundle.getString("totalFrame_gt");
+        String totalGlass_dt_str = bundle.getString("totalGlass_gt");
+        String totalPrice_dt_str = bundle.getString("totalPrice_gt");
+
+        int totalGlass_dt_int = Integer.parseInt(totalGlass_dt_str); //typecating _ int
+
+        totalPrice_dt.setText(totalPrice_dt_str);
 
 
-        rg_door.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
+        radioGroup_dt.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                checkRadioButton();
+                int radioId = radioGroup_dt.getCheckedRadioButtonId();
+                radioButton_dt = findViewById(radioId);
+
+                switch (radioId) {
+                    case R.id.Choice1:   //single door without lock
+
+                        double setTotalPrice_doub1 = cal.chooseSingleDoor(totalGlass_dt_int);   //calculate price with chosen door
+                        String setTotalPrice_str1 = String.valueOf(setTotalPrice_doub1);
+                        totalPrice_dt.setText(setTotalPrice_str1);
+
+                        break;
+                    case R.id.Choice2:   //single door with lock
+
+                        double setTotalPrice_doub2 = cal.chooseSingleDoor(totalGlass_dt_int) + cal.lockCase;
+                        String setTotalPrice_str2 = String.valueOf(setTotalPrice_doub2);
+                        totalPrice_dt.setText(setTotalPrice_str2);
+
+                        break;
+                    case R.id.Choice3: //double door without lock
+
+                        double setTotalPrice_doub3 = cal.chooseDoubleDoor(totalGlass_dt_int);
+                        String setTotalPrice_str3 = String.valueOf(setTotalPrice_doub3);
+                        totalPrice_dt.setText(setTotalPrice_str3);
+
+                        break;
+                    case R.id.Choice4: //double door with lock
+
+                        double setTotalPrice_doub4 = cal.chooseDoubleDoor(totalGlass_dt_int) + cal.lockCase;
+                        String setTotalPrice_str4 = String.valueOf(setTotalPrice_doub4);
+                        totalPrice_dt.setText(setTotalPrice_str4);
+
+                        break;
+
+                    case R.id.Choice5: //single slide door
+
+                        double setTotalPrice_doub5 = cal.chooseSingleSlideDoor(totalGlass_dt_int);
+                        String setTotalPrice_str5 = String.valueOf(setTotalPrice_doub5);
+                        totalPrice_dt.setText(setTotalPrice_str5);
+
+                        break;
+                    case R.id.Choice6: //double slide door
+
+                        double setTotalPrice_doub6 = cal.chooseDoubleSlideDoor(totalGlass_dt_int);
+                        String setTotalPrice_str6 = String.valueOf(setTotalPrice_doub6);
+                        totalPrice_dt.setText(setTotalPrice_str6);
+
+                }
 
             }
         });
@@ -47,9 +104,19 @@ public class Doortype extends AppCompatActivity {
         switchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String doorPrice_str = priceWithDoor.getText().toString();
+
+                int radioId = radioGroup_dt.getCheckedRadioButtonId();
+                radioButton_dt = findViewById(radioId);
+                String str = radioButton_dt.getText().toString();
+
+                String totalPrice_dt_pass_str = totalPrice_dt.getText().toString();
+
+                //passing data to dh(DoorHandleType) class
                 Intent intent = new Intent(Doortype.this, Doorhandletype.class);
-                intent.putExtra("price_door", doorPrice_str);
+                intent.putExtra("totalPrice_dt", totalPrice_dt_pass_str);
+                intent.putExtra("totalFrame_dt", totalFrame_dt_str);
+                intent.putExtra("totalGlass_dt", totalGlass_dt_str);
+                intent.putExtra("chosenDoor_dt", str);
                 startActivity(intent);
             }
         });
@@ -57,58 +124,8 @@ public class Doortype extends AppCompatActivity {
 
     }
 
-    public void checkRadioButton() {
-
-       int radioId = rg_door.getCheckedRadioButtonId();
-       rb_door = findViewById(radioId);
-
-        switch (radioId) {
-            case R.id.Choice1:   //single door without lock
-
-                setPrice();
-
-                break;
-            case R.id.Choice2:
-
-                setPrice();
-
-                break;
-            case R.id.Choice3:
-
-                setPrice();
-
-                break;
-            case R.id.Choice4:
-
-                setPrice();
-
-                break;
-
-            case R.id.Choice5:
-
-                setPrice();
-
-                break;
-            case R.id.Choice6:
-
-                setPrice();
-
-        }
-    }
-
-    public void setPrice() {
-        CalculateOffer cal = new CalculateOffer();
-
-        intent = getIntent();
-        String tg_str =intent.getStringExtra("totalGlass");
-        int tg = Integer.parseInt(tg_str);
 
 
-        String str = rb_door.getText().toString();
 
-        double price_c1 = cal.calculateDoor(tg, str);
-        String price_str = String.valueOf(price_c1);
-        priceWithDoor.setText(price_str);
 
-    }
 }
