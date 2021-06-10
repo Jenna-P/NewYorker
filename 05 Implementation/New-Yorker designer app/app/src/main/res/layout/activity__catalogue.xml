@@ -155,7 +155,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/a14" />
+                    app:srcCompat="@drawable/a23" />
 
                 <TextView
                     android:id="@+id/Highth"
@@ -179,7 +179,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="24dp"
                     android:fontFamily="@font/roboto"
-                    android:text="@string/bredde_40_cm"
+                    android:text="bredde: 80 cm"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textSize="12sp"
@@ -226,7 +226,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/roboto"
-                    android:text="@string/_4_fag_m_4_glas"
+                    android:text="6 fag m/ 6 glas"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textSize="18sp"
@@ -266,7 +266,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/a14" />
+                    app:srcCompat="@drawable/a24" />
 
                 <TextView
                     android:id="@+id/Highth"
@@ -337,7 +337,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/roboto"
-                    android:text="@string/_4_fag_m_4_glas"
+                    android:text="8 fag m/ 8 glas"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textSize="18sp"
@@ -377,7 +377,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/a14" />
+                    app:srcCompat="@drawable/a33" />
 
                 <TextView
                     android:id="@+id/Highth"
@@ -401,7 +401,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="24dp"
                     android:fontFamily="@font/roboto"
-                    android:text="@string/bredde_40_cm"
+                    android:text="bredde 60 cm"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textSize="12sp"
@@ -448,7 +448,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/roboto"
-                    android:text="@string/_4_fag_m_4_glas"
+                    android:text="9 fag m/ 9 glas"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textSize="18sp"
@@ -488,7 +488,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/a14" />
+                    app:srcCompat="@drawable/a34" />
 
                 <TextView
                     android:id="@+id/Highth"
@@ -512,7 +512,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="24dp"
                     android:fontFamily="@font/roboto"
-                    android:text="@string/bredde_40_cm"
+                    android:text="a"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textSize="12sp"
@@ -559,7 +559,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/roboto"
-                    android:text="@string/_4_fag_m_4_glas"
+                    android:text="12 fag m/ 12 glas"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textSize="18sp"
