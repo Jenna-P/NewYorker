@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doortype">
+
+    <EditText
+        android:id="@+id/totalPrice_dt"
+        android:layout_width="176dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="95dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doorHandleList"
+        app:layout_constraintVertical_bias="0.329" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="110dp"
+        android:text="Pris"
+        android:textColor="#272727"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doorHandleList"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="108dp"
+        android:text="kr."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/doorHandleList"
+        app:layout_constraintVertical_bias="0.329" />
+
+    <Button
+        android:id="@+id/ok_dt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="@string/OK_chooseDoor"
+        app:backgroundTint="#BF8E55"
+        app:iconPadding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/acceptcadmeasurements"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="260dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo1" />
+
+
+
+    <TextView
+        android:id="@+id/DoorChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/v_lg_en_type_af_d_r"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_door"
+        android:layout_width="323dp"
+        android:layout_height="337dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toTopOf="@+id/ok_dt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DoorChoice"
+        app:layout_constraintVertical_bias="0.346"
+        tools:ignore="MissingConstraints">
+
+
+        <RadioButton
+            android:id="@+id/Choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/enkeltd_r_uden_l_sekasse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DoorChoice" />
+
+        <RadioButton
+            android:id="@+id/Choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/enkeltd_r_med_l_sekassee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Choice2" />
+
+        <RadioButton
+            android:id="@+id/Choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/dubbeltd_r_uden_l_sekasse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Choice1" />
+
+        <RadioButton
+            android:id="@+id/Choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/dubbeltd_r_med_l_sekasse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Choice3" />
+
+
+        <RadioButton
+            android:id="@+id/Choice5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/enkelt_skyded_r_uden_l_s"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Choice6" />
+
+        <RadioButton
+            android:id="@+id/Choice6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/dubbelt_skyded_r_uden_l_s"
+            app:layout_constraintBottom_toTopOf="@+id/ok_dt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Choice4" />
+
+
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
