@@ -72,5 +72,6 @@
     <string name="enkelt_door">EnkeltDør</string>
     <string name="chosenDoor">valgtDør</string>
     <string name="handle_chosen">handle</string>
+    <string name="se_katalog">Se katalog</string>
 
 </resources>
