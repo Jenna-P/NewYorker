@@ -1,36 +1,71 @@
-com/example/newyorkerui/Glasstype.java
- com.example.newyorkerui.Glasstype
 com/example/newyorkerui/Loadingscreen.java
  com.example.newyorkerui.Loadingscreen
-KD_iteration1/PersonData.java
- KD_iteration1.PersonData
 com/example/newyorkerui/UserMeasurements.java
  com.example.newyorkerui.UserMeasurements
-KD_iteration1/ConnectToDB.java
- KD_iteration1.ConnectToDB
+Logic/ConnectToDB.java
+ Logic.ConnectToDB
+com/example/newyorkerui/Glass_showWall.java
+ com.example.newyorkerui.Glass_showWall
+ com.example.newyorkerui.Glass_showWall$1
+ com.example.newyorkerui.Glass_showWall$2
+Model/GlassType_M.java
+ Model.GlassType_M
+com/example/newyorkerui/BuildConfig.java
+ com.example.newyorkerui.BuildConfig
+Model/PersonData.java
+ Model.PersonData
+Logic/WallLayout.java
+ Logic.WallLayout
+com/example/newyorkerui/Doorhandletype.java
+ com.example.newyorkerui.Doorhandletype
+ com.example.newyorkerui.Doorhandletype$1
+ com.example.newyorkerui.Doorhandletype$2
+com/example/newyorkerui/Door_showWall.java
+ com.example.newyorkerui.Door_showWall
+ com.example.newyorkerui.Door_showWall$1
+ com.example.newyorkerui.Door_showWall$2
+com/example/newyorkerui/ShowMeasurements.java
+ com.example.newyorkerui.ShowMeasurements
+Logic/CalculateOffer.java
+ Logic.CalculateOffer
+com/example/newyorkerui/Catalog.java
+ com.example.newyorkerui.Catalog
+com/example/newyorkerui/Doortype.java
+ com.example.newyorkerui.Doortype
+ com.example.newyorkerui.Doortype$1
+ com.example.newyorkerui.Doortype$2
+com/example/newyorkerui/MainActivity.java
+ com.example.newyorkerui.MainActivity
+ com.example.newyorkerui.MainActivity$1
+ com.example.newyorkerui.MainActivity$2
+com/example/newyorkerui/Glasstype.java
+ com.example.newyorkerui.Glasstype
+ com.example.newyorkerui.Glasstype$1
+ com.example.newyorkerui.Glasstype$2
+Model/Catalog.java
+ Model.Catalog
+Model/DoorType_M.java
+ Model.DoorType_M
+com/example/newyorkerui/CatalogAdapter.java
+ com.example.newyorkerui.CatalogAdapter
+ com.example.newyorkerui.CatalogAdapter$1
+ com.example.newyorkerui.CatalogAdapter$ViewHolder
+com/example/newyorkerui/CatalogData.java
+ com.example.newyorkerui.CatalogData
+Model/DoorHandleType_M.java
+ Model.DoorHandleType_M
 BackendToFrontendComs.java
  BackendToFrontendComs
 com/example/newyorkerui/UserContact.java
  com.example.newyorkerui.UserContact
 com/example/newyorkerui/ShowWall.java
  com.example.newyorkerui.ShowWall
-com/example/newyorkerui/BuildConfig.java
- com.example.newyorkerui.BuildConfig
-com/example/newyorkerui/Doorhandletype.java
- com.example.newyorkerui.Doorhandletype
+ com.example.newyorkerui.ShowWall$1
+ com.example.newyorkerui.ShowWall$2
+Logic/DbAdapter.java
+ Logic.DbAdapter
+ Logic.DbAdapter$myDbHelper
+Model/Sketch.java
+ Model.Sketch
 com/example/newyorkerui/ShowAccept.java
  com.example.newyorkerui.ShowAccept
-NewYorkerApp/CalculateOffer.java
- NewYorkerApp.CalculateOffer
-KD_iteration1/WallLayout.java
- KD_iteration1.WallLayout
-com/example/newyorkerui/Catalogue.java
- com.example.newyorkerui.Catalogue
-com/example/newyorkerui/ShowMeasurements.java
- com.example.newyorkerui.ShowMeasurements
-KD_iteration1/CalculateOffer.java
- KD_iteration1.CalculateOffer
-com/example/newyorkerui/Doortype.java
- com.example.newyorkerui.Doortype
-com/example/newyorkerui/MainActivity.java
- com.example.newyorkerui.MainActivity

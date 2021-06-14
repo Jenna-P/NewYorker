@@ -1,4 +1,4 @@
-#Thu Jun 03 14:48:19 CEST 2021
-base.0=C\:\\Users\\Prophet\\Documents\\GitHub\\NewYorker\\05 Implementation\\New-Yorker designer app\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Mon Jun 14 16:28:28 CEST 2021
+base.0=/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
