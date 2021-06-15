@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.google.android.material.tabs.TabLayout;
 
 public class UserMeasurements extends AppCompatActivity {
 
@@ -31,12 +30,7 @@ public class UserMeasurements extends AppCompatActivity {
         minMaxWidth = (TextView) findViewById(R.id.minMaxWidth);
 
 
-//        intent = getIntent();
-//        Bundle bundle = intent.getExtras();
-//        String possHeight_str = bundle.getString("possHeight");
-//        String possWidth_str = bundle.getString("possWidth");
 
-        // working only when catalog clicked
         String className = getIntent().getStringExtra("Class");
         if(className.equals("CA")) {
             String h = getIntent().getStringExtra("possHeight");
@@ -62,6 +56,7 @@ public class UserMeasurements extends AppCompatActivity {
         Intent intent = new Intent(UserMeasurements.this, ShowWall.class);
         intent.putExtra("height", h);
         intent.putExtra("width", w);
+        intent.putExtra("class", "UM");
         startActivity(intent);
     }
 }

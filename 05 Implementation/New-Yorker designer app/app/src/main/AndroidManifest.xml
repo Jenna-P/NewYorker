@@ -10,8 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewYorkerUI">
         <activity android:name=".Catalog" />
-        <activity android:name=".Door_showWall" />
-        <activity android:name=".Glass_showWall" />
         <activity android:name=".Glasstype" />
         <activity android:name=".Doorhandletype" />
         <activity android:name=".Doortype" />

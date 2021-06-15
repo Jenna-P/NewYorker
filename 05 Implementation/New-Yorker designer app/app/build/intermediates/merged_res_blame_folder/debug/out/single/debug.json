@@ -60,12 +60,12 @@
         "source": "/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
-    },
-    {
         "merged": "/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
         "source": "/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
     },
     {
         "merged": "/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_skitsebillede.png.flat",

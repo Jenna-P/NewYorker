@@ -85,7 +85,7 @@
         android:id="@+id/DoorChoice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="210dp"
         android:fontFamily="@font/roboto"
         android:text="@string/v_lg_en_type_af_d_r"
         android:textAllCaps="true"
@@ -105,7 +105,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664"
+        app:layout_constraintVertical_bias="0.703"
         tools:ignore="MissingConstraints">
 
 

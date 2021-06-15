@@ -1,7 +1,7 @@
 com/example/newyorkerui/Loadingscreen.java
  com.example.newyorkerui.Loadingscreen
-com/example/newyorkerui/UserMeasurements.java
- com.example.newyorkerui.UserMeasurements
+Model/Sketch.java
+ Model.Sketch
 Logic/ConnectToDB.java
  Logic.ConnectToDB
 com/example/newyorkerui/Glass_showWall.java
@@ -16,10 +16,9 @@ Model/PersonData.java
  Model.PersonData
 Logic/WallLayout.java
  Logic.WallLayout
-com/example/newyorkerui/Doorhandletype.java
- com.example.newyorkerui.Doorhandletype
- com.example.newyorkerui.Doorhandletype$1
- com.example.newyorkerui.Doorhandletype$2
+Logic/DbAdapter.java
+ Logic.DbAdapter
+ Logic.DbAdapter$myDbHelper
 com/example/newyorkerui/Door_showWall.java
  com.example.newyorkerui.Door_showWall
  com.example.newyorkerui.Door_showWall$1
@@ -38,10 +37,8 @@ com/example/newyorkerui/MainActivity.java
  com.example.newyorkerui.MainActivity
  com.example.newyorkerui.MainActivity$1
  com.example.newyorkerui.MainActivity$2
-com/example/newyorkerui/Glasstype.java
- com.example.newyorkerui.Glasstype
- com.example.newyorkerui.Glasstype$1
- com.example.newyorkerui.Glasstype$2
+com/example/newyorkerui/ShowAccept.java
+ com.example.newyorkerui.ShowAccept
 Model/Catalog.java
  Model.Catalog
 Model/DoorType_M.java
@@ -58,14 +55,17 @@ BackendToFrontendComs.java
  BackendToFrontendComs
 com/example/newyorkerui/UserContact.java
  com.example.newyorkerui.UserContact
+com/example/newyorkerui/Glasstype.java
+ com.example.newyorkerui.Glasstype
+ com.example.newyorkerui.Glasstype$1
+ com.example.newyorkerui.Glasstype$2
 com/example/newyorkerui/ShowWall.java
  com.example.newyorkerui.ShowWall
  com.example.newyorkerui.ShowWall$1
  com.example.newyorkerui.ShowWall$2
-Logic/DbAdapter.java
- Logic.DbAdapter
- Logic.DbAdapter$myDbHelper
-Model/Sketch.java
- Model.Sketch
-com/example/newyorkerui/ShowAccept.java
- com.example.newyorkerui.ShowAccept
+com/example/newyorkerui/Doorhandletype.java
+ com.example.newyorkerui.Doorhandletype
+ com.example.newyorkerui.Doorhandletype$1
+ com.example.newyorkerui.Doorhandletype$2
+com/example/newyorkerui/UserMeasurements.java
+ com.example.newyorkerui.UserMeasurements

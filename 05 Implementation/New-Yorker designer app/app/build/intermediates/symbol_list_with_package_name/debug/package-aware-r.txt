@@ -1843,7 +1843,10 @@ id chip1
 id chip2
 id chip3
 id chip_group
+id chosenDH
+id chosenDoor
 id chosenDoor_d
+id chosenGlass
 id chosenGlass_g
 id chosenHandle_d
 id chronometer

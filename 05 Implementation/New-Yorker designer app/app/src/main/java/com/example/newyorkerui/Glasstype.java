@@ -45,6 +45,7 @@ public class Glasstype extends AppCompatActivity {
         String totalPrice_gt_str = bundle.getString("totalPrice_sw");
         String totalGlass_gt_str = bundle.getString("totalGlass_sw");
         String totalFrame_gt_str = bundle.getString("totalFrame_sw");
+        int wallImg = bundle.getInt("wall");
 
         double totalPrice_gt_doub = Double.parseDouble(totalPrice_gt_str);
 
@@ -101,14 +102,16 @@ public class Glasstype extends AppCompatActivity {
                   intent.putExtra("totalPrice_gt", totalPrice_gt_str);
                   intent.putExtra("totalFrame_gt", totalFrame_gt_str);
                   intent.putExtra("totalGlass_gt", totalGlass_gt_str); //passing value
+
                  startActivity(intent);
               }
              else {
-                  intent = new Intent(Glasstype.this, Glass_showWall.class);
+                  intent = new Intent(Glasstype.this, ShowWall.class);
                   intent.putExtra("totalFrame_gt", totalFrame_gt_str);
                   intent.putExtra("totalGlass_gt", totalGlass_gt_str);
                   intent.putExtra("totalPrice_gt", totalPrice_gt_str);
                   intent.putExtra("chosenGlass_gt", str);
+                  intent.putExtra("class", "GT");
 
                   startActivity(intent);
               }
