@@ -81,12 +81,11 @@
         app:srcCompat="@drawable/logo1" />
 
 
-
     <TextView
         android:id="@+id/DoorChoice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="210dp"
         android:fontFamily="@font/roboto"
         android:text="@string/v_lg_en_type_af_d_r"
         android:textAllCaps="true"
@@ -102,11 +101,11 @@
         android:layout_width="323dp"
         android:layout_height="337dp"
         android:layout_centerInParent="true"
-        app:layout_constraintBottom_toTopOf="@+id/ok_dt"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DoorChoice"
-        app:layout_constraintVertical_bias="0.346"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703"
         tools:ignore="MissingConstraints">
 
 
@@ -189,7 +188,6 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Choice4" />
-
 
 
     </RadioGroup>

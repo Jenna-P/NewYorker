@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -22,9 +23,10 @@ public class Glasstype extends AppCompatActivity {
     EditText totalPrice_gt;  // show price at Glasstype activity
 
     public Intent intent;
+    public String totalPrice_gt_str = "";
+    public String totalGlass_gt_str ="";
+    public String totalFrame_gt_str = "";
     CalculateOffer cal = new CalculateOffer();
-
-
 
 
     @Override
@@ -43,16 +45,19 @@ public class Glasstype extends AppCompatActivity {
         String totalPrice_gt_str = bundle.getString("totalPrice_sw");
         String totalGlass_gt_str = bundle.getString("totalGlass_sw");
         String totalFrame_gt_str = bundle.getString("totalFrame_sw");
+        int wallImg = bundle.getInt("wall");
 
         double totalPrice_gt_doub = Double.parseDouble(totalPrice_gt_str);
 
         totalPrice_gt.setText(totalPrice_gt_str);
 
-        //radio gruop selected
+
+
+        //radio group selected
         radioGroup_gt.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                // get value from ShowWall class (antal Glas, pris)
+                // get value from ShowWall class (total glass, price)
 
                 int totalGlass_int = Integer.parseInt(totalGlass_gt_str);
 
@@ -90,8 +95,6 @@ public class Glasstype extends AppCompatActivity {
                 radioButton_gt = findViewById(radioId);
                 String str = radioButton_gt.getText().toString();
 
-
-
                 String totalPrice_gt_str = totalPrice_gt.getText().toString(); // get price value to pass to DoorType activity
 
               if(cb.isChecked()) {
@@ -99,14 +102,16 @@ public class Glasstype extends AppCompatActivity {
                   intent.putExtra("totalPrice_gt", totalPrice_gt_str);
                   intent.putExtra("totalFrame_gt", totalFrame_gt_str);
                   intent.putExtra("totalGlass_gt", totalGlass_gt_str); //passing value
+
                  startActivity(intent);
               }
              else {
-                  intent = new Intent(Glasstype.this, Glass_showWall.class);
+                  intent = new Intent(Glasstype.this, ShowWall.class);
                   intent.putExtra("totalFrame_gt", totalFrame_gt_str);
                   intent.putExtra("totalGlass_gt", totalGlass_gt_str);
                   intent.putExtra("totalPrice_gt", totalPrice_gt_str);
                   intent.putExtra("chosenGlass_gt", str);
+                  intent.putExtra("class", "GT");
 
                   startActivity(intent);
               }
@@ -116,7 +121,9 @@ public class Glasstype extends AppCompatActivity {
         });
 
 
+
     }
+
 
 
 }

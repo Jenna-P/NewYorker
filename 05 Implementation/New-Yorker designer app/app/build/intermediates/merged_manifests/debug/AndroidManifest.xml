@@ -18,6 +18,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.NewYorkerUI" >
+        <activity android:name="com.example.newyorkerui.Catalog" />
+        <activity android:name="com.example.newyorkerui.Door_showWall" />
+        <activity android:name="com.example.newyorkerui.Glass_showWall" />
         <activity android:name="com.example.newyorkerui.Glasstype" />
         <activity android:name="com.example.newyorkerui.Doorhandletype" />
         <activity android:name="com.example.newyorkerui.Doortype" />
@@ -27,7 +30,6 @@
         <activity android:name="com.example.newyorkerui.ShowMeasurements" />
         <activity android:name="com.example.newyorkerui.ShowWall" />
         <activity android:name="com.example.newyorkerui.UserMeasurements" />
-        <activity android:name="com.example.newyorkerui.Catalogue" />
         <activity android:name="com.example.newyorkerui.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

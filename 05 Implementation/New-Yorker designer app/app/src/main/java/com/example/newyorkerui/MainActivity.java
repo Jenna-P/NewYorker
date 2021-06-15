@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(MainActivity.this, UserMeasurements.class);
+                myIntent.putExtra("Class","main");
                 startMyActivity(myIntent);
             }
         });
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         catalogButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity.this, Catalogue.class);
+                Intent myIntent = new Intent(MainActivity.this, Catalog.class);
                 startActivity(myIntent);
             }
         });

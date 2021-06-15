@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewYorkerUI">
-        <activity android:name=".Door_showWall"></activity>
-        <activity android:name=".Glass_showWall" />
+        <activity android:name=".Catalog" />
         <activity android:name=".Glasstype" />
         <activity android:name=".Doorhandletype" />
         <activity android:name=".Doortype" />
@@ -20,7 +19,6 @@
         <activity android:name=".ShowMeasurements" />
         <activity android:name=".ShowWall" />
         <activity android:name=".UserMeasurements" />
-        <activity android:name=".Catalogue" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

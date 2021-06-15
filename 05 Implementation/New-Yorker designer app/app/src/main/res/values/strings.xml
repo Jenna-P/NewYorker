@@ -4,8 +4,8 @@
     <string name="string_string_textnewyorker" />
     <string name="new_yorker_v_gge">NEW YORKER VÆGGE</string>
     <string name="opret_tilbud">Opret Tilbud</string>
-    <string name="m_l_angives_i_centimeter">Mål angives i centimeter</string>
-    <string name="indtast_bredten_p_v_ggen">Indtast bredten på væggen</string>
+    <string name="m_l_angives_i_centimeter">Angiv mål i cm</string>
+    <string name="indtast_bredten_p_v_ggen">Indtast bredden på væggen</string>
     <string name="indtast_h_jden_p_v_ggen">Indtast højden på væggen</string>
     <string name="afslut">AFSLUT</string>
     <string name="tak_for_bestillingen">Tak for bestillingen</string>
@@ -15,7 +15,7 @@
     <string name="navn">Navn</string>
     <string name="e_mail">E-mail</string>
     <string name="telefonnummer">Telefonnummer</string>
-    <string name="kommentare_til_orderen">Kommentare til orderen</string>
+    <string name="kommentare_til_orderen">Kommentarer til ordren</string>
     <string name="dit_telefonnummer">Dit telefonnummer</string>
     <string name="dit_navn">Dit navn</string>
     <string name="din_email_adresse">Din Email adresse</string>
@@ -73,5 +73,9 @@
     <string name="chosenDoor">valgtDør</string>
     <string name="handle_chosen">handle</string>
     <string name="se_katalog">Se katalog</string>
+    <string name="intast_bredden_p_v_ggen">Intast bredden på væggen</string>
+    <string name="h_jde_catalog">Højde</string>
+    <string name="bredde_catalog">Bredde</string>
+    <string name="indtast_bredde_p_v_ggen">Indtast bredde på væggen</string>
 
 </resources>

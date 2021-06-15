@@ -83,9 +83,10 @@ public class Doorhandletype extends AppCompatActivity {
 
                         break;
 
-                    case R.id.Choice5:  //no handle
+                    case R.id.Choice5:  //ingen handle
 
-                        totalPrice_dh.setText(totalPrice_dh_str);
+                       String noHandle = getIntent().getStringExtra("totalPrice_dt");
+                        totalPrice_dh.setText(noHandle);
                 }
 
                 }
@@ -100,14 +101,15 @@ public class Doorhandletype extends AppCompatActivity {
 
                 String str = radioButton_dh.getText().toString();
 
-               //passing data from dh(DoorHandletype) class to door_showWall class
+               //passing data from dh(DoorHandletype) class to showWall class
                 String passPrice = totalPrice_dh.getText().toString();
-                Intent intent = new Intent(Doorhandletype.this, Door_showWall.class);  //not userContact, should be new showWall activity
+                Intent intent = new Intent(Doorhandletype.this, ShowWall.class);
                 intent.putExtra("totalPrice_dh", passPrice);
                 intent.putExtra("totalFrame_dh", totalFrame_dh_str);
                 intent.putExtra("totalGlass_dh", totalGlass_dh_str);
                 intent.putExtra("chosenDoor_dh", chosenDoor_dh_str);
                 intent.putExtra("chosenHandle_dh", str);
+                intent.putExtra("class", "DH");
                 startActivity(intent);
 
             }
