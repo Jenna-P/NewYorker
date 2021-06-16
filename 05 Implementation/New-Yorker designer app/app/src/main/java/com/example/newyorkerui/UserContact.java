@@ -5,9 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 import Logic.DbAdapter;
 import Model.PersonData;
@@ -15,6 +19,7 @@ import Model.PersonData;
 public class UserContact extends AppCompatActivity {
 
     Button switchButton;
+    Spinner dropdownlist;
 
     public EditText uName;
     public  EditText uEmail;
@@ -30,6 +35,7 @@ public class UserContact extends AppCompatActivity {
 
         //tilslutter UI til kode
         switchButton = findViewById(R.id.sendorder);
+        dropdownlist = (Spinner) findViewById(R.id.dropdownlist);
 
         //brugerens input
         uName = findViewById(R.id.name);
@@ -40,13 +46,26 @@ public class UserContact extends AppCompatActivity {
 
         db = new DbAdapter(this);
 
+        dropdownlist.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position).toString(), Toast.LENGTH_SHORT).show();
+                Log.d("spinner", parent.getItemAtPosition(position).toString());
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         switchButton.setOnClickListener(view -> launchActivity());
     }
 
     private void launchActivity() {
 
-       // Intent intentu = new Intent(this, ShowAccept.class);
-      //  startActivity(intentu);
+
 
         getPersonData();
 

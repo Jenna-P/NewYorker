@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name = "doorList">
+    <string-array name = "forhandler">
 
-        <item>Enkeltdør uden låsekasse</item>
-        <item>Enkeltdør med låsekasse</item>
-        <item>Dobbeltdør uden låsekasse</item>
-        <item>Dobbeltdør med låsekasse</item>
-        <item>Enkelt skydedør</item>
-        <item>Dobbelt skydedør</item>
-
-
-    </string-array>
-
-    <string-array name = "doorHandleList">
-
-        <item>Messing langgreb 1 side</item>
-        <item>Messing langgreb 2 sider</item>
-        <item>Sort langgreb 1 side</item>
-        <item>Sort langgreb 2 sider</item>
+        <item>XL Byg</item>
+        <item>STARK</item>
+        <item>Forhandler1</item>
+        <item>Forhandler2</item>
+        <item>Forhandler3</item>
 
 
 
     </string-array>
+
+
 </resources>

@@ -57,8 +57,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
-array doorHandleList
-array doorList
+array forhandler
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1749,7 +1748,6 @@ id accelerate
 id acceptcadmeasurements
 id acceptwall
 id acceptwall_d
-id acceptwall_g
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -1804,8 +1802,6 @@ id actions
 id activity_chooser_view_content
 id add
 id adjust
-id adjust_d
-id adjust_g
 id alertTitle
 id aligned
 id all
@@ -1845,10 +1841,7 @@ id chip3
 id chip_group
 id chosenDH
 id chosenDoor
-id chosenDoor_d
 id chosenGlass
-id chosenGlass_g
-id chosenHandle_d
 id chronometer
 id circle_center
 id clear_text
@@ -2201,16 +2194,10 @@ id toggle
 id top
 id topPanel
 id totalFrame
-id totalFrame_d
-id totalFrame_g
 id totalGlass
-id totalGlass_d
-id totalGlass_g
 id totalPrice
-id totalPrice_d
 id totalPrice_dh
 id totalPrice_dt
-id totalPrice_g
 id totalPrice_gt
 id touch_outside
 id transitionToEnd
@@ -2235,8 +2222,6 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id wallDesign
-id wallDesign_d
-id wallDesign_g
 id wallName
 id wallpicture
 id width_input
@@ -2307,10 +2292,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_accept
 layout activity_catalog
-layout activity_door_show_wall
 layout activity_doorhandletype
 layout activity_doortype
-layout activity_glass_show_wall
 layout activity_glasstype
 layout activity_loading
 layout activity_main

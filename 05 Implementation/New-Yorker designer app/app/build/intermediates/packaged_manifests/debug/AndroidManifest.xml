@@ -19,8 +19,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.NewYorkerUI" >
         <activity android:name="com.example.newyorkerui.Catalog" />
-        <activity android:name="com.example.newyorkerui.Door_showWall" />
-        <activity android:name="com.example.newyorkerui.Glass_showWall" />
         <activity android:name="com.example.newyorkerui.Glasstype" />
         <activity android:name="com.example.newyorkerui.Doorhandletype" />
         <activity android:name="com.example.newyorkerui.Doortype" />

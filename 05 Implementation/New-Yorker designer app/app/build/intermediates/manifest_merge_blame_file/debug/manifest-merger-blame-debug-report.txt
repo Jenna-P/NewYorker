@@ -11,7 +11,7 @@
 9-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:5:5-31:19
+11-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:5:5-29:19
 12        android:allowBackup="true"
 12-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -31,53 +31,47 @@
 21        <activity android:name="com.example.newyorkerui.Catalog" />
 21-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:12:9-45
 21-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:12:19-42
-22        <activity android:name="com.example.newyorkerui.Door_showWall" />
-22-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:13:9-51
-22-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:13:19-48
-23        <activity android:name="com.example.newyorkerui.Glass_showWall" />
+22        <activity android:name="com.example.newyorkerui.Glasstype" />
+22-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:13:9-47
+22-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:13:19-44
+23        <activity android:name="com.example.newyorkerui.Doorhandletype" />
 23-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:14:9-52
 23-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:14:19-49
-24        <activity android:name="com.example.newyorkerui.Glasstype" />
-24-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:15:9-47
-24-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:15:19-44
-25        <activity android:name="com.example.newyorkerui.Doorhandletype" />
-25-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:16:9-52
-25-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:16:19-49
-26        <activity android:name="com.example.newyorkerui.Doortype" />
-26-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:17:9-46
-26-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:17:19-43
-27        <activity android:name="com.example.newyorkerui.Loadingscreen" />
-27-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:18:9-51
-27-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:18:19-48
-28        <activity android:name="com.example.newyorkerui.ShowAccept" />
-28-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:19:9-48
-28-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:19:19-45
-29        <activity android:name="com.example.newyorkerui.UserContact" />
-29-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:20:9-49
-29-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:20:19-46
-30        <activity android:name="com.example.newyorkerui.ShowMeasurements" />
+24        <activity android:name="com.example.newyorkerui.Doortype" />
+24-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:15:9-46
+24-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:15:19-43
+25        <activity android:name="com.example.newyorkerui.Loadingscreen" />
+25-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:16:9-51
+25-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:16:19-48
+26        <activity android:name="com.example.newyorkerui.ShowAccept" />
+26-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:17:9-48
+26-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:17:19-45
+27        <activity android:name="com.example.newyorkerui.UserContact" />
+27-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:18:9-49
+27-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:18:19-46
+28        <activity android:name="com.example.newyorkerui.ShowMeasurements" />
+28-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:19:9-54
+28-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:19:19-51
+29        <activity android:name="com.example.newyorkerui.ShowWall" />
+29-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:20:9-46
+29-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:20:19-43
+30        <activity android:name="com.example.newyorkerui.UserMeasurements" />
 30-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:21:9-54
 30-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:21:19-51
-31        <activity android:name="com.example.newyorkerui.ShowWall" />
-31-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:22:9-46
-31-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:22:19-43
-32        <activity android:name="com.example.newyorkerui.UserMeasurements" />
-32-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:23:9-54
-32-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:23:19-51
-33        <activity android:name="com.example.newyorkerui.MainActivity" >
-33-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:24:9-30:20
-33-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:24:19-47
-34            <intent-filter>
-34-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:25:13-29:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:26:17-69
-35-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:26:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:28:17-77
-37-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:28:27-74
-38            </intent-filter>
-39        </activity>
-40    </application>
-41
-42</manifest>
+31        <activity android:name="com.example.newyorkerui.MainActivity" >
+31-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:22:9-28:20
+31-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:22:19-47
+32            <intent-filter>
+32-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:23:13-27:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:24:17-69
+33-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:24:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:26:17-77
+35-->/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/src/main/AndroidManifest.xml:26:27-74
+36            </intent-filter>
+37        </activity>
+38    </application>
+39
+40</manifest>

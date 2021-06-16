@@ -120,11 +120,12 @@
 
     <Spinner
         android:id="@+id/dropdownlist"
-        android:layout_width="213dp"
-        android:layout_height="34dp"
+        android:layout_width="216dp"
+        android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="20dp"
         android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/forhandler"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toTopOf="@+id/sendorder"
         app:layout_constraintEnd_toEndOf="parent"

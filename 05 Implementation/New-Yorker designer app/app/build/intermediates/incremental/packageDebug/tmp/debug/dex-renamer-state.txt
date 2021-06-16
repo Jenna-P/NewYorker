@@ -1,4 +1,4 @@
-#Mon Jun 14 20:25:02 CEST 2021
+#Wed Jun 16 12:16:00 CEST 2021
 base.0=/Users/jennapetersen/AndroidStudioProjects/NewYorker-main/05 Implementation/New-Yorker designer app/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
